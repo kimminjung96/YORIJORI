@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+@mixin slot {
+  // button font
+  font-family: "Inconsolata";
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0px;
+  fill: #fff;
+}
+@mixin text_shadow {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.sec5_container {
+  position: relative;
+}
+.sub_title {
+  position: absolute;
+  top: 95px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slide 2s ease-in-out;
+}
+@keyframes slide {
+  from {
+    top: 300px;
+    opacity: 0;
+  }
+  to {
+    top: 95px;
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  from {
+    top: 95px;
+    opacity: 1;
+  }
+  to {
+    top: 300px;
+    opacity: 0;
+  }
+}
+// randombox--------------------------------------------------------------
+
+.change {
+  text-align: center;
+  color: #e62200;
+  border: solid 10px #ffa906;
+  border-radius: 15px;
+  padding: 0px;
+  animation: up-down 1.4s infinite ease-in-out alternate; /* 애니메이션 
+  정방향 재생 후 역방향 재생 */
+  transition: all 0.3s linear;
+  &:hover {
+    animation-play-state: paused;
+    border: solid 5px #b6dc49;
+  }
+}
+@keyframes up-down {
+  from {
+    transform: translatey(0px);
+  }
+  to {
+    transform: translatey(-15px);
+  }
+}
+// slot -----------------------------------------------------------------
+
+.sec5_container {
+  background-color: #f7f5eb;
+}
+.txt_title {
+  color: #ffa906;
+}
+.random_title {
+  @include text_shadow();
+}
+.sub_title {
+  @include text_shadow();
+}
+
+.slot {
+  @include slot;
+}
+
+.btn_css {
+  @include slot;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  background-color: #ffa906;
+  color: #fff;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0px 15px 20px rgba(255, 169, 6, 0.3);
+    transform: translateY(-7px);
+  }
+}
+//slot end
