@@ -1,16 +1,39 @@
-$primary: #ffa906;
-$secondary: #fff348;
-$success: #b6dc49;
-/* $info: $cyan !default;
-$warning: $yellow !default;
-$danger: $red !default;
- */$light: #FFFDF3;
-$dark: #393939;
-
-
-@import "./reset";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
-@import "./custom";
-
-
+@font-face {
+    font-family: 'Pretendard';
+    src: url('../font/Pretendard-Black.ttf');
+  }
+  *{
+    font-family: 'Pretendard' !important;
+  }
+  
+  .carousel-caption {
+    width: 700px !important;
+    right: 60% !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    padding-bottom: 0 !important;
+    bottom: auto !important;
+  }
+  
+  $primary: #ffa906;
+  $secondary: #fff348;
+  $success: #b6dc49;
+  
+  $light: #fffdf3;
+  $dark: #393939;
+  
+  .carousel-item,
+  .carousel-caption {
+    text-align: left !important;
+  }
+  
+  @import "./reset";
+  @import "./carousel";
+  @import "../node_modules/bootstrap/scss/bootstrap.scss";
+  @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+  @import "./custom";
+  /* $info: $cyan !default;
+  $warning: $yellow !default;
+  $danger: $red !default;
+   */
+  
