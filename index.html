@@ -5,21 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YORIJORI</title>
+    <!-- sec5 font 여러분 sec5주석달린것 순서 바꾸시면 안되요 ㅠㅠ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.css" />
+    <!-- sec5 -->
+    <link rel="stylesheet" href="css/sec5.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
-        >
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a href="#none" class="logo">
             <img src="img/logo.png" alt="YORI JORI" class="img_g" />
           </a>
 
-          <ul
-            class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
-          >
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li class="onedep">
               <a href="#" class="nav-link px-4 text-dark">인기추천</a>
               <ul class="subdep">
@@ -37,13 +41,7 @@
           <!-- 검색 -->
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
             <div class="frm_sch">
-              <input
-                type="search"
-                class="form-control"
-                id="search_term"
-                placeholder="레시피를 검색하세요."
-                aria-label="Search"
-              />
+              <input type="search" class="form-control" id="search_term" placeholder="레시피를 검색하세요." aria-label="Search" />
               <button type="button" class="btn_sch" id="search">
                 <span class="ico_commm ico_search">검색</span>
               </button>
@@ -62,88 +60,46 @@
 
     <section>
       <div class="container-fluid p-0">
-        <div
-          id="carouselWithCaptions"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
+        <div id="carouselWithCaptions" class="carousel slide" data-bs-ride="carousel">
           <ol class="carousel-indicators">
-            <li
-              data-bs-target="#carouselWithCaptions"
-              data-bs-slide-to="0"
-              class="active"
-            ></li>
-            <li
-              data-bs-target="#carouselWithCaptions"
-              data-bs-slide-to="1"
-            ></li>
-            <li
-              data-bs-target="#carouselWithCaptions"
-              data-bs-slide-to="2"
-            ></li>
+            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img
-                src="img/carousel_bg.png"
-                class="d-block w-100"
-                alt="Slide 1"
-              />
+              <img src="img/carousel_bg.png" class="d-block w-100" alt="Slide 1" />
               <div class="carousel-caption d-none d-sm-block text-dark">
                 <p class="fs-1 fw-semibold mb-6">기쁠때나 슬플때나 함께하는!</p>
                 <h5 class="display-2 fw-bold">지금은 <br />이 레시피가 딱!</h5>
                 <p class="fs-5 fs-4 pt-3 pb-5">#우울 #행복 #분노</p>
-                <button type="button" class="btn btn-primary p-3">
-                  레시피 보러가기
-                </button>
+                <button type="button" class="btn btn-primary p-3">레시피 보러가기</button>
               </div>
             </div>
             <div class="carousel-item">
-              <img
-                src="img/carousel_bg.png"
-                class="d-block w-100"
-                alt="Slide 2"
-              />
+              <img src="img/carousel_bg.png" class="d-block w-100" alt="Slide 2" />
               <div class="carousel-caption d-none d-sm-block text-dark">
                 <p class="fs-1 fw-semibold mb-6">추적추적 비가 내리는 날</p>
                 <h5 class="display-2 fw-bold">오늘은 <br />이 음식이 땡긴다</h5>
                 <p class="fs-5 fs-4 pt-3 pb-5">#비 #햇살가득 #눈이펑펑</p>
-                <button type="button" class="btn btn-primary p-3">
-                  레시피 보러가기
-                </button>
+                <button type="button" class="btn btn-primary p-3">레시피 보러가기</button>
               </div>
             </div>
             <div class="carousel-item">
-              <img
-                src="img/carousel_bg.png"
-                class="d-block w-100"
-                alt="Slide 3"
-              />
+              <img src="img/carousel_bg.png" class="d-block w-100" alt="Slide 3" />
               <div class="carousel-caption d-none d-sm-block text-dark">
                 <p class="fs-1 fw-semibold mb-6">기쁠때나 슬플때나 함께하는!</p>
                 <h5 class="display-2 fw-bold">지금은 <br />이 레시피가 딱!</h5>
                 <p class="fs-5 fs-4 pt-3 pb-5">#우울 #행복 #분노</p>
-                <button type="button" class="btn btn-primary p-3">
-                  레시피 보러가기
-                </button>
+                <button type="button" class="btn btn-primary p-3">레시피 보러가기</button>
               </div>
             </div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselWithCaptions"
-            role="button"
-            data-bs-slide="prev"
-          >
+          <a class="carousel-control-prev" href="#carouselWithCaptions" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselWithCaptions"
-            role="button"
-            data-bs-slide="next"
-          >
+          <a class="carousel-control-next" href="#carouselWithCaptions" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </a>
@@ -151,316 +107,299 @@
       </div>
     </section>
     <!-- //mainSlider -->
-        <!-- ======= Menu Section ======= -->
-        <section id="menu" class="menu">
-          <div class="container" data-aos="fade-up">
-    
-            <div class="section-header text-center">
-              <h2>오늘 나의 YORI는?</h2>
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header text-center">
+          <h2>오늘 나의 YORI는?</h2>
+        </div>
+
+        <ul class="nav nav-tabs d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos-delay="200">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-cam">
+              <h4>#캠핑가서뭐먹지</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-home"> <h4>#홈파티</h4> </a
+            ><!-- End tab nav item -->
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-easy">
+              <h4>#누워서도가능해</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-broke">
+              <h4>#이별후먹게되는</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-month">
+              <h4>#제철요리</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-house">
+              <h4>#자취요리</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-mom">
+              <h4>#엄마생각</h4>
+            </a>
+          </li>
+          <!-- End tab nav item -->
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+          <div class="tab-pane fade active show" id="menu-cam">
+            <div class="tab-header text-center">
+              <p>테마</p>
+              <h3>캠핑가서 뭐 먹지?</h3>
             </div>
-    
-            <ul class="nav nav-tabs d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos-delay="200">
-    
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-cam">
-                  <h4>#캠핑가서뭐먹지</h4>
-                </a>
-              </li><!-- End tab nav item -->
-    
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-home">
-                  <h4>#홈파티</h4>
-                </a><!-- End tab nav item -->
-    
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-easy">
-                  <h4>#누워서도가능해</h4>
-                </a>
-              </li><!-- End tab nav item -->
-    
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-broke">
-                  <h4>#이별후먹게되는</h4>
-                </a>
-              </li><!-- End tab nav item -->
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-month">
-                  <h4>#제철요리</h4>
-                </a>
-              </li><!-- End tab nav item -->
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-house">
-                  <h4>#자취요리</h4>
-                </a>
-              </li><!-- End tab nav item -->
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-mom">
-                  <h4>#엄마생각</h4>
-                </a>
-              </li><!-- End tab nav item -->
-    
-            </ul>
-    
-            <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
-    
-              <div class="tab-pane fade active show" id="menu-cam">
-    
-                <div class="tab-header text-center">
-                  <p>테마</p>
-                  <h3>캠핑가서 뭐 먹지?</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/c_food6.jpeg" class="glightbox"><img src="img/c_food6.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>숯불 닭꼬치 | 요리조리</h4>
-                    <p class="ingredients">
-                      #캠핑 #바베큐 #꼬치 
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/c_food9.jpeg" class="glightbox"><img src="img/c_food9.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>감바스 알 아히요 | 요리조리</h4>
-                    <p class="ingredients">
-                      #캠핑 #기념일 #와인
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="img/k_food8.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>부대찌개 | 요리조리</h4>
-                    <p class="ingredients">
-                      #캠핑 #따끈한국물 #한식 
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                 <!-- Menu Item -->
-    
-                </div>
-              </div><!-- End Starter Menu Content -->
-    
-              <div class="tab-pane fade" id="menu-home">
-    
-                <div class="tab-header text-center">
-                  <p>테마</p>
-                  <h3>홈파티</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/a_food2.jpeg" class="glightbox"><img src="img/a_food2.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>명란 파스타</h4>
-                    <p class="ingredients">
-                      #홈파티 #만들기쉬운음식 #대량조리
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/c_food8.jpeg" class="glightbox"><img src="img/c_food8.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>퀘사디아</h4>
-                    <p class="ingredients">
-                      #홈파티 #나누기쉬운음식 #피자말고 
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/a_food3.jpeg" class="glightbox"><img src="img/a_food3.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>라자냐</h4>
-                    <p class="ingredients">
-                      #홈파티 #치즈 #오븐
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                </div>
-              </div><!-- End Breakfast Menu Content -->
-    
-              <div class="tab-pane fade" id="menu-easy">
-    
-                <div class="tab-header text-center">
-                  <p>테마</p>
-                  <h3>누워서도 가능해!</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/a_food7.jpeg" class="glightbox"><img src="img/a_food7.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>스크램블</h4>
-                    <p class="ingredients">
-                      #누워서도가능해 #1분음식 
-                    </p>
 
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/k_food19.jpeg" class="glightbox"><img src="img/k_food19.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>삼각김밥</h4>
-                    <p class="ingredients">
-                      #누워서도가능해 #냉장보관
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/c_food14.jpeg" class="glightbox"><img src="img/c_food14.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>메밀 소바</h4>
-                    <p class="ingredients">
-                      #누워서도가능해 #답답할때
-                    </p>
-                  </div><!-- Menu Item -->
-                </div>
-              </div><!-- End Lunch Menu Content -->
-    
-              <div class="tab-pane fade" id="menu-broke">
-    
-                <div class="tab-header text-center">
-                  <p>테마</p>
-                  <h3>이별 후 먹게되는..</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/c_food5.jpeg" class="glightbox"><img src="img/c_food5.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>닭발</h4>
-                    <p class="ingredients">
-                      #이별후먹게되는 #나쁜X #주먹밥도
-                    </p>
-
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/c_food10.jpeg" class="glightbox"><img src="img/c_food10.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>낙지볶음</h4>
-                    <p class="ingredients">
-                      #이별후먹게되는 #아주맵게 #볶아먹자
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/k_food6.jpeg" class="glightbox"><img src="img/k_food6.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>떡볶이</h4>
-                    <p class="ingredients">
-                      #이별후먹게되는 #순대추가 #튀김추가 
-                    </p>
-                  </div><!-- Menu Item -->
-                </div>
-              </div><!-- End Dinner Menu Content -->
-              <div class="tab-pane fade" id="menu-month">
-    
-                <div class="tab-header text-center">
-                  <p>테마</p>
-                  <h3>제철재료로 만드는 요리</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/k_food15.jpeg" class="glightbox"><img src="img/k_food15.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>가지덮밥</h4>
-                    <p class="ingredients">
-                      #제철음식 #겨울가지 #한식
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/c_food11.jpeg" class="glightbox"><img src="img/c_food11.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>골뱅이 무침</h4>
-                    <p class="ingredients">
-                      #제철음식 #겨울에서봄 #술안주
-                    </p>
-
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/k_food22.jpeg" class="glightbox"><img src="img/k_food22.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>비빔밥</h4>
-                    <p class="ingredients">
-                      #제철음식 #봄나물 #한식
-                    </p>
-                  </div><!-- Menu Item -->
-                </div>
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="img/c_food6.jpeg" class="glightbox"><img src="img/c_food6.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>숯불 닭꼬치 | 요리조리</h4>
+                <p class="ingredients">#캠핑 #바베큐 #꼬치</p>
               </div>
-              <div class="tab-pane fade" id="menu-house">
-    
-                <div class="tab-header text-center">
-                  <p>테마</p>
-                  <h3>자취요리</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/t_food1.jpeg" class="glightbox"><img src="img/t_food1.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>김치새우볶음밥</h4>
-                    <p class="ingredients">
-                      #자취요리 #새우없어도 #소울푸드
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/k_food1.jpeg" class="glightbox"><img src="img/k_food1.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>소시지 야채볶음</h4>
-                    <p class="ingredients">
-                      #자취요리 #케첩필요 #남녀노소
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/k_food9.jpeg" class="glightbox"><img src="img/k_food9.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>제육볶음</h4>
-                    <p class="ingredients">
-                      #자취요리 #숙성시켜 #한식
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                
-    
-                </div>
-              </div>
-              <div class="tab-pane fade" id="menu-mom">
-    
-                <div class="tab-header text-center">
-                  <p>테마</p>
-                  <h3>엄마가 생각나는 요리</h3>
-                </div>
-    
-                <div class="row gy-5">
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/k_food14.jpeg" class="glightbox"><img src="img/k_food14.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>소고기 무국</h4>
-                    <p class="ingredients">
-                     #엄마생각 #든든한국물 #한식
-                    </p>
+              <!-- Menu Item -->
 
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/k_food7.jpeg" class="glightbox"><img src="img/k_food7.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>김치전</h4>
-                    <p class="ingredients">
-                      #엄마생각 #오징어 #비오는날
-                    </p>
-                  </div><!-- Menu Item -->
-    
-                  <div class="col-lg-4 menu-item">
-                    <a href="img/k_food20.jpeg" class="glightbox"><img src="img/k_food20.jpeg" class="menu-img img-fluid" alt=""></a>
-                    <h4>미역국</h4>
-                    <p class="ingredients">
-                      #엄마생각 #귀빠진날 #한식
-                    </p>
-                  </div><!-- Menu Item -->
-                </div>
-              </div><!-- End Dinner Menu Content -->
-    
+              <div class="col-lg-4 menu-item">
+                <a href="img/c_food9.jpeg" class="glightbox"><img src="img/c_food9.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>감바스 알 아히요 | 요리조리</h4>
+                <p class="ingredients">#캠핑 #기념일 #와인</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="img/k_food8.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>부대찌개 | 요리조리</h4>
+                <p class="ingredients">#캠핑 #따끈한국물 #한식</p>
+              </div>
+              <!-- Menu Item -->
+
+              <!-- Menu Item -->
             </div>
-    
           </div>
-        </section><!-- End Menu Section -->
+          <!-- End Starter Menu Content -->
 
+          <div class="tab-pane fade" id="menu-home">
+            <div class="tab-header text-center">
+              <p>테마</p>
+              <h3>홈파티</h3>
+            </div>
+
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="img/a_food2.jpeg" class="glightbox"><img src="img/a_food2.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>명란 파스타</h4>
+                <p class="ingredients">#홈파티 #만들기쉬운음식 #대량조리</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/c_food8.jpeg" class="glightbox"><img src="img/c_food8.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>퀘사디아</h4>
+                <p class="ingredients">#홈파티 #나누기쉬운음식 #피자말고</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/a_food3.jpeg" class="glightbox"><img src="img/a_food3.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>라자냐</h4>
+                <p class="ingredients">#홈파티 #치즈 #오븐</p>
+              </div>
+              <!-- Menu Item -->
+            </div>
+          </div>
+          <!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="menu-easy">
+            <div class="tab-header text-center">
+              <p>테마</p>
+              <h3>누워서도 가능해!</h3>
+            </div>
+
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="img/a_food7.jpeg" class="glightbox"><img src="img/a_food7.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>스크램블</h4>
+                <p class="ingredients">#누워서도가능해 #1분음식</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/k_food19.jpeg" class="glightbox"><img src="img/k_food19.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>삼각김밥</h4>
+                <p class="ingredients">#누워서도가능해 #냉장보관</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/c_food14.jpeg" class="glightbox"><img src="img/c_food14.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>메밀 소바</h4>
+                <p class="ingredients">#누워서도가능해 #답답할때</p>
+              </div>
+              <!-- Menu Item -->
+            </div>
+          </div>
+          <!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="menu-broke">
+            <div class="tab-header text-center">
+              <p>테마</p>
+              <h3>이별 후 먹게되는..</h3>
+            </div>
+
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="img/c_food5.jpeg" class="glightbox"><img src="img/c_food5.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>닭발</h4>
+                <p class="ingredients">#이별후먹게되는 #나쁜X #주먹밥도</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/c_food10.jpeg" class="glightbox"><img src="img/c_food10.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>낙지볶음</h4>
+                <p class="ingredients">#이별후먹게되는 #아주맵게 #볶아먹자</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/k_food6.jpeg" class="glightbox"><img src="img/k_food6.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>떡볶이</h4>
+                <p class="ingredients">#이별후먹게되는 #순대추가 #튀김추가</p>
+              </div>
+              <!-- Menu Item -->
+            </div>
+          </div>
+          <!-- End Dinner Menu Content -->
+          <div class="tab-pane fade" id="menu-month">
+            <div class="tab-header text-center">
+              <p>테마</p>
+              <h3>제철재료로 만드는 요리</h3>
+            </div>
+
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="img/k_food15.jpeg" class="glightbox"><img src="img/k_food15.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>가지덮밥</h4>
+                <p class="ingredients">#제철음식 #겨울가지 #한식</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/c_food11.jpeg" class="glightbox"><img src="img/c_food11.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>골뱅이 무침</h4>
+                <p class="ingredients">#제철음식 #겨울에서봄 #술안주</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/k_food22.jpeg" class="glightbox"><img src="img/k_food22.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>비빔밥</h4>
+                <p class="ingredients">#제철음식 #봄나물 #한식</p>
+              </div>
+              <!-- Menu Item -->
+            </div>
+          </div>
+          <div class="tab-pane fade" id="menu-house">
+            <div class="tab-header text-center">
+              <p>테마</p>
+              <h3>자취요리</h3>
+            </div>
+
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="img/t_food1.jpeg" class="glightbox"><img src="img/t_food1.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>김치새우볶음밥</h4>
+                <p class="ingredients">#자취요리 #새우없어도 #소울푸드</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/k_food1.jpeg" class="glightbox"><img src="img/k_food1.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>소시지 야채볶음</h4>
+                <p class="ingredients">#자취요리 #케첩필요 #남녀노소</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/k_food9.jpeg" class="glightbox"><img src="img/k_food9.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>제육볶음</h4>
+                <p class="ingredients">#자취요리 #숙성시켜 #한식</p>
+              </div>
+              <!-- Menu Item -->
+            </div>
+          </div>
+          <div class="tab-pane fade" id="menu-mom">
+            <div class="tab-header text-center">
+              <p>테마</p>
+              <h3>엄마가 생각나는 요리</h3>
+            </div>
+
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="img/k_food14.jpeg" class="glightbox"><img src="img/k_food14.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>소고기 무국</h4>
+                <p class="ingredients">#엄마생각 #든든한국물 #한식</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/k_food7.jpeg" class="glightbox"><img src="img/k_food7.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>김치전</h4>
+                <p class="ingredients">#엄마생각 #오징어 #비오는날</p>
+              </div>
+              <!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item">
+                <a href="img/k_food20.jpeg" class="glightbox"><img src="img/k_food20.jpeg" class="menu-img img-fluid" alt="" /></a>
+                <h4>미역국</h4>
+                <p class="ingredients">#엄마생각 #귀빠진날 #한식</p>
+              </div>
+              <!-- Menu Item -->
+            </div>
+          </div>
+          <!-- End Dinner Menu Content -->
+        </div>
+      </div>
+    </section>
+    <!-- End Menu Section -->
+
+    <!-- section5_random -->
+    <section class="container sec5_container">
+      <h1 class="display-6 pt-5 mb-5 fw-semibold text-center random_title">
+        <span class="text-warning fw-bold txt_title">YORIJORI</span>
+        의 랜덤 레시피는?
+      </h1>
+      <p class="h5 mt-3 mb-5 sub_title">요리조리가 제안하는 레시피로 고민을 덜어보세요!</p>
+
+      <div class="row d-flex justify-content-center mb-5 pt-5 random_box">
+        <img src="./img/sec5_dish.jpg" alt="랜덤이미지" class="col-6 change" />
+        <!-- img-thumbnail -->
+      </div>
+
+      <div class="row justify-content-md-center">
+        <button class="col-3 btn btn-warning text-white m-5 p-3 btn_css" type="button">korean</button>
+        <button class="col-3 btn btn-warning m-5 p-3 btn_css" type="button"><div class="js-odoo slot"></div></button>
+        <button class="col-3 btn btn-warning text-white m-5 p-3 btn_css" type="button">japanese</button>
+      </div>
+    </section>
+    <!-- //section5_random -->
+    <!-- footer -->
     <footer class="bg-primary">
       <div class="container">
         <div class="d-flex">
@@ -479,26 +418,24 @@
             <a href=""><img src="img/Group 187.png" alt="" /></a>
           </div>
         </div>
-        <p class="text-dark">
-          회사명 : YORIJORI컴퍼니 &nbsp 회사 번호 : 031)442-5869 &nbsp 대표자 :
-          끝내조 &nbsp 개인정보관리책임자 : 끝내조원
-        </p>
+        <p class="text-dark">회사명 : YORIJORI컴퍼니 &nbsp 회사 번호 : 031)442-5869 &nbsp 대표자 : 끝내조 &nbsp 개인정보관리책임자 : 끝내조원</p>
         <div class="d-flex justify-content-between container">
-          <p class="text-dark">
-            사업자번호 : 183-521-45237 &nbsp 전화 : 010-6530-1591 &nbsp 이메일 :
-            yorijori@gmail.com
-          </p>
+          <p class="text-dark">사업자번호 : 183-521-45237 &nbsp 전화 : 010-6530-1591 &nbsp 이메일 : yorijori@gmail.com</p>
           <p class=""><img src="img/logo.png" alt="" class="" /></p>
         </div>
         <div class="border-top border-white">
-          <p class="text-center pb-4 pt-4">
-            Copyright © yorijori All Right Reserved.
-          </p>
+          <p class="text-center pb-4 pt-4">Copyright © yorijori All Right Reserved.</p>
         </div>
       </div>
     </footer>
     <!-- //footer -->
-
+    <!-- sec5 slot cdn -->
+    <script src="https://cdn.rawgit.com/coderitual/odoo/feature/codevember16/lib/odoo.js"></script>
+    <!-- sec5 js -->
+    <script src="js/sec5.js"></script>
+    <script src="js/slot.js"></script>
+    <!-- bootstrap cdn -->
+    <!--   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
