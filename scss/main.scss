@@ -1,14 +1,16 @@
 $primary: #ffa906;
 $secondary: #fff348;
 $success: #b6dc49;
-$info: $cyan !default;
+/* $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
-$light: #FFFDF3;
+ */$light: #FFFDF3;
 $dark: #393939;
 
 
 @import "./reset";
-@import "./custom";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "./custom";
+
+
