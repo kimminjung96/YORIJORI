@@ -230,7 +230,6 @@ input[type="submit"] {
 
 // nav
 
-//main
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
@@ -238,7 +237,7 @@ input[type="submit"] {
   border: 0;
 }
 .menu .container ul{
-  width: 800px;
+  width: 650px;
   margin: auto;
 }
 .menu .nav-link {
@@ -259,7 +258,6 @@ input[type="submit"] {
     padding: 10px 0;
   }
 }
-
 .menu .nav-link i {
   padding-right: 15px;
   font-size: 48px;
@@ -274,10 +272,9 @@ input[type="submit"] {
 
 @media (max-width: 575px) {
   .menu .nav-link h4 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
-
 .menu .nav-link:hover {
   color: var(--color-primary);
 }
@@ -333,7 +330,13 @@ input[type="submit"] {
   font-weight: 700;
   color: var(--color-primary);
 }
-
+.menu .tab-content .row .menu-item h4{
+  font-weight: bold;
+}
+.menu .tab-content .row .menu-item .price{
+  font-weight: normal;
+}
+//tab
 
 //Subpage 시작
 
