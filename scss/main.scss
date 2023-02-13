@@ -2,9 +2,9 @@
     font-family: 'Pretendard';
     src: url('../font/Pretendard-Black.ttf');
   }
-  *{
-    font-family: 'Pretendard' !important;
-  }
+
+  $font-family-sans-serif: 'Pretendard';
+
   
   .carousel-caption {
     width: 700px !important;
@@ -28,7 +28,6 @@
   }
   
   @import "./reset";
-  @import "./carousel";
   @import "../node_modules/bootstrap/scss/bootstrap.scss";
   @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
   @import "./custom";

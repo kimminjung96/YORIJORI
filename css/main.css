@@ -1,10 +1,28 @@
 @charset "UTF-8";
-/* $info: $cyan !default;
-$warning: $yellow !default;
-$danger: $red !default;
- */
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/Pretendard-Black.ttf");
+}
+*, a {
+  font-family: "Pretendard" !important;
+}
+
+.carousel-caption {
+  width: 700px !important;
+  right: 60% !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  padding-bottom: 0 !important;
+  bottom: auto !important;
+}
+
+.carousel-item,
+.carousel-caption {
+  text-align: left !important;
+}
+
 html, body, div, span, applet, object, iframe,
 h1,
 .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, blockquote, pre,
@@ -93,7 +111,7 @@ table {
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: #FFFDF3;
+  --bs-light: #fffdf3;
   --bs-dark: #393939;
   --bs-primary-rgb: 255, 169, 6;
   --bs-secondary-rgb: 255, 243, 72;
@@ -107,7 +125,7 @@ table {
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
   --bs-body-bg-rgb: 255, 255, 255;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Pretendard";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -1957,7 +1975,7 @@ progress {
 
 .table-light {
   --bs-table-color: #000;
-  --bs-table-bg: #FFFDF3;
+  --bs-table-bg: #fffdf3;
   --bs-table-border-color: #e6e4db;
   --bs-table-striped-bg: #f2f0e7;
   --bs-table-striped-color: #000;
@@ -3057,8 +3075,8 @@ textarea.form-control-lg {
 
 .btn-light {
   --bs-btn-color: #000;
-  --bs-btn-bg: #FFFDF3;
-  --bs-btn-border-color: #FFFDF3;
+  --bs-btn-bg: #fffdf3;
+  --bs-btn-border-color: #fffdf3;
   --bs-btn-hover-color: #000;
   --bs-btn-hover-bg: #d9d7cf;
   --bs-btn-hover-border-color: #cccac2;
@@ -3068,8 +3086,8 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: #bfbeb6;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #FFFDF3;
-  --bs-btn-disabled-border-color: #FFFDF3;
+  --bs-btn-disabled-bg: #fffdf3;
+  --bs-btn-disabled-border-color: #fffdf3;
 }
 
 .btn-dark {
@@ -3192,19 +3210,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-light {
-  --bs-btn-color: #FFFDF3;
-  --bs-btn-border-color: #FFFDF3;
+  --bs-btn-color: #fffdf3;
+  --bs-btn-border-color: #fffdf3;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #FFFDF3;
-  --bs-btn-hover-border-color: #FFFDF3;
+  --bs-btn-hover-bg: #fffdf3;
+  --bs-btn-hover-border-color: #fffdf3;
   --bs-btn-focus-shadow-rgb: 255, 253, 243;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #FFFDF3;
-  --bs-btn-active-border-color: #FFFDF3;
+  --bs-btn-active-bg: #fffdf3;
+  --bs-btn-active-border-color: #fffdf3;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #FFFDF3;
+  --bs-btn-disabled-color: #fffdf3;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #FFFDF3;
+  --bs-btn-disabled-border-color: #fffdf3;
   --bs-gradient: none;
 }
 
@@ -3473,9 +3491,6 @@ textarea.form-control-lg {
   bottom: 100%;
   margin-top: 0;
   margin-bottom: var(--bs-dropdown-spacer);
-}
-.dropup .dropdown-toggle {
-  border: 0 !important;
 }
 .dropup .dropdown-toggle::after {
   display: inline-block;
@@ -6892,7 +6907,7 @@ textarea.form-control-lg {
 }
 
 .link-light {
-  color: #FFFDF3 !important;
+  color: #fffdf3 !important;
 }
 .link-light:hover, .link-light:focus {
   color: #fffdf5 !important;
@@ -11349,3 +11364,8 @@ input[type=submit] {
   background-color: #676775;
   height: 300px;
 }
+
+/* $info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+ *//*# sourceMappingURL=main.css.map */
