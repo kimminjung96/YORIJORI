@@ -5,10 +5,6 @@
   font-family: "Pretendard";
   src: url("../font/Pretendard-Black.ttf");
 }
-*, a {
-  font-family: "Pretendard" !important;
-}
-
 .carousel-caption {
   width: 700px !important;
   right: 60% !important;
@@ -73,6 +69,87 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* sidebar */
+.fixed-right {
+  width: 10%;
+  position: fixed;
+  top: 20%;
+  right: 20px;
+  z-index: 9999999;
+  display: block;
+}
+
+/* store */
+#store a img {
+  transition: all 0.3s ease;
+}
+
+#store a:hover img {
+  box-shadow: 6px 6px 5px #333;
+}
+
+/* chef */
+#chef .card:hover {
+  cursor: pointer;
+}
+
+#chef .card:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+#chef .card:hover:after {
+  height: 100%;
+}
+
+.sns_mark {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* btn_more */
+.btn_more {
+  display: block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  text-indent: -9999px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.btn_more:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/btn_more_bul_white.png) no-repeat center 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+#chef .card:hover .btn_more:after {
+  transform: rotate(180deg);
+  opacity: 1;
+}
+
+#chef .card:hover .sns_mark {
+  opacity: 1;
+  z-index: 10;
 }
 
 /*!
@@ -11266,7 +11343,7 @@ input[type=submit] {
 }
 
 .menu .container ul {
-  width: 800px;
+  width: 650px;
   margin: auto;
 }
 
@@ -11301,7 +11378,7 @@ input[type=submit] {
 
 @media (max-width: 575px) {
   .menu .nav-link h4, .menu .nav-link .h4 {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 .menu .nav-link:hover {
@@ -11360,12 +11437,20 @@ input[type=submit] {
   color: var(--color-primary);
 }
 
+.menu .tab-content .row .menu-item h4, .menu .tab-content .row .menu-item .h4 {
+  font-weight: bold;
+}
+
+.menu .tab-content .row .menu-item .price {
+  font-weight: normal;
+}
+
 .main-sub {
   background-color: #676775;
   height: 300px;
 }
 
 /* $info: $cyan !default;
-$warning: $yellow !default;
-$danger: $red !default;
- *//*# sourceMappingURL=main.css.map */
+  $warning: $yellow !default;
+  $danger: $red !default;
+   *//*# sourceMappingURL=main.css.map */
