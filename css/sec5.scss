@@ -58,7 +58,8 @@
   transition: all 0.3s linear;
   &:hover {
     animation-play-state: paused;
-    border: solid 5px #b6dc49;
+    border: solid 10px #b6dc49;
+    cursor: wait;
   }
 }
 @keyframes up-down {
@@ -71,9 +72,9 @@
 }
 // slot -----------------------------------------------------------------
 
-.sec5_container {
+/* .sec5_container {
   background-color: #f7f5eb;
-}
+} */
 .txt_title {
   color: #ffa906;
 }
@@ -106,3 +107,26 @@
   }
 }
 //slot end
+.bg_chief{
+  border-radius: 50%;
+  transition:all 1.5s linear;
+}
+.bg_chief:hover{
+  background-color: #fae1e1;
+}
+// text blink
+.txt_blink{
+  animation: blink 3s 3s infinite linear;
+@keyframes blink {
+  0%{
+    visibility: hidden;
+  }
+  50%{
+    visibility: hidden;
+  }
+  1000%{
+    visibility: visible;
+  }
+}
+
+}
