@@ -72,7 +72,6 @@ async function sendApiRequest(f_tp) {
   let type = f_tp;
   let random_num = [];
   let i = 0;
-  
 
   // console.log(type);
   //url
@@ -298,7 +297,7 @@ function useApiData(data, rn, tp) {
   } else if (num2 === 9 && tp === "japanese") {
     title2 = "버터빵가루 스파게티";
   }
-  
+
   //card title-3
   if (num3 === 0 && tp === "korean") {
     title3 = "쌈장 레시피";
@@ -390,7 +389,6 @@ function useApiData(data, rn, tp) {
   } else if (num3 === 9 && tp === "japanese") {
     title3 = "버터빵가루 스파게티";
   }
- 
 
   //prind card
   document.querySelector(".content1").innerHTML = `
@@ -439,4 +437,3 @@ function useApiData(data, rn, tp) {
 </div>`;
 }
 /* //print card*/
-
