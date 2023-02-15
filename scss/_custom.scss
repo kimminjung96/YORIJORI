@@ -23,7 +23,7 @@ big,
 cite,
 code,
 del,
-dfn,
+drn,
 em,
 img,
 ins,
@@ -147,19 +147,24 @@ input[type="submit"] {
   text-indent: -9999px;
 }
 .img_g {
-  width: 100%;
+  display: inline-block;
+  width: 220px;
+  height: 60px;
 }
 .header {
+  justify-content: space-around;
+  align-items: center;
   padding: 15px;
   background-color: #fff;
 }
 .logo {
-  width: 166px;
-  margin-right: 40px;
 }
 
 .nav-link {
   color: #191919;
+}
+.nav-side{
+  align-items: center;
 }
 
 .ico_search {
@@ -207,16 +212,26 @@ input[type="submit"] {
     position:absolute;
     background-color:#ffa806;
     display: none;
-    margin-top: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+    z-index: 9999999999999999;
+}
+.subdep a{
+  display: inline-block;
 }
 .subdep li a:hover{
   color: #fff !important;
 }
 .onedep{
   position: relative;
+  
+}
+.onedep a{
+
+  height: 70px;
+  padding-top: 28px;
+
 }
 
 .onedep:hover{
@@ -224,6 +239,45 @@ input[type="submit"] {
     display: block;
   }
 }
+
+@media (max-width: 575px){
+  .Company-information-sub{
+    display: block !important;
+  }
+}
+
+@media (max-width: 767px){
+  .Company-information-sub{
+    display: block !important;
+  }
+  .Company-information-sub p{
+    padding-left: 0 !important;
+  }
+  .menu-bar{
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 992px){
+  .nav-main-menu{
+    display: none;
+  }
+  .frm_sch{
+    display: none;
+  }
+  .nav-side-menu{
+    display: none;
+  }
+  .menu-bar{
+    display: block;
+  }
+.sns-information{
+  display: none;
+}
+  
+}
+
+
 
 // nav
 
@@ -349,3 +403,22 @@ input[type="submit"] {
   height: 300px;
 }
 
+
+
+
+
+//Footer 시작
+.Company-information{
+  width: 800px;
+}
+.Company-information p a{
+  font-size: 14px !important;
+}
+.Company-information p a{
+  display: block;
+  width: 120px;
+  text-align: center;
+ }
+.Company-information-sub p{
+  font-size: 12px;
+}

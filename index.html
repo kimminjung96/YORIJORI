@@ -17,29 +17,29 @@
     <link rel="stylesheet" href="css/sec5.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="#none" class="logo">
-            <img src="img/logo.png" alt="YORI JORI" class="img_g" />
-          </a>
-
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+    <header class="header p-0 d-flex">
+        <a href="#none" class="logo">
+          <img src="./img/Group 285.svg" alt="YORI JORI" class="img_g" />
+        </a>
+        <div class="d-flex flex-wrap align-items-center nav-main">
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 nav-main-menu">
             <li class="onedep">
               <a href="#" class="nav-link px-4 text-dark font">인기추천</a>
               <ul class="subdep">
-                <li class="pb-2 pt-2">
+                <li class="pb-2">
                   <a href="#" class="text-dark">셰프</a>
                 </li>
                 <li class="pb-2"><a href="#" class="text-dark">레시피</a></li>
               </ul>
             </li>
-            <li><a href="#" class="nav-link px-4 text-dark">스토어</a></li>
-            <li><a href="#" class="nav-link px-4 text-dark">레시피</a></li>
-            <li><a href="#" class="nav-link px-4 text-dark">게시판</a></li>
+            <li class="onedep"><a href="#" class="nav-link px-4 text-dark">스토어</a></li>
+            <li class="onedep"><a href="#" class="nav-link px-4 text-dark">레시피</a></li>
+            <li class="onedep"><a href="#" class="nav-link px-4 text-dark">게시판</a></li>
           </ul>
-
-          <!-- 검색 -->
+        </div>
+       </div>
+         <!-- 검색 -->
+        <div class="d-flex nav-side">
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
             <div class="frm_sch">
               <input type="search" class="form-control" id="search_term" placeholder="레시피를 검색하세요." aria-label="Search" />
@@ -48,14 +48,12 @@
               </button>
             </div>
           </form>
-
-          <div class="d-flex">
-            <div><a href="#" class="text-dark">로그인</a></div>
-            <div class="px-1">/</div>
-            <div><a href="#" class="text-dark">회원가입</a></div>
+          <div class="d-flex justify-content-end">
+            <div class="nav-side-menu"><a href="#" class="text-dark">로그인</a></div>
+            <div class="px-1 nav-side-menu ">/</div>
+            <div class="nav-side-menu"><a href="#" class="text-dark">회원가입</a></div>
+            <div><a href="#" class="d-lg-none menu-bar"><img src="./img/Vector.svg" alt=""></a></div>
           </div>
-        </div>
-      </div>
     </header>
     <!-- //header -->
 
@@ -558,7 +556,7 @@
     <!-- store -->
     <section id="store" class="bg-light py-5">
       <div class="container-fluid">
-        <a href="#"><img src="img/store_bg.png" alt="" class="w-100" /></a>
+        <a href="./Subpage.html"><img src="img/store_bg.png" alt="" class="w-100" /></a>
       </div>
     </section>
     <!-- //store -->
@@ -707,28 +705,35 @@
     <footer class="bg-primary">
       <div class="container">
         <div class="d-flex">
-          <div class="p-2 w-100 d-flex pt-5">
-            <p><a href="#" class="text-dark">이용약관</a></p>
-            <p class="ps-5">
-              <a href="#" class="text-dark">개인정보취급방침</a>
+          <div class="p-2 d-flex pt-5 Company-information container">
+            <p><a href="#" class="text-dark fs-6">이용약관</a></p>
+            <p class="">
+              <a href="#" class="text-dark fw-bold">개인정보취급방침</a>
             </p>
-            <p class="ps-5"><a href="#" class="text-dark">고객센터</a></p>
-            <p class="ps-5"><a href="#" class="text-dark">광고 제휴 문의</a></p>
+            <p class=""><a href="#" class="text-dark">고객센터</a></p>
+            <p class=""><a href="#" class="text-dark">광고 제휴 문의</a></p>
           </div>
-          <div class="p-2 flex-shrink-1 w-100 text-end pt-5">
+          <div class="p-2 flex-shrink-1 w-100 text-end pt-5 sns-information">
             <a href=""><img src="img/twitter-logo.png" alt="" /></a>
             <a href=""><img src="img/instagram.png" alt="" /></a>
             <a href=""><img src="img/Group 189.png" alt="" /></a>
             <a href=""><img src="img/Group 187.png" alt="" /></a>
           </div>
         </div>
-        <p class="text-dark">회사명 : YORIJORI컴퍼니 &nbsp 회사 번호 : 031)442-5869 &nbsp 대표자 : 끝내조 &nbsp 개인정보관리책임자 : 끝내조원</p>
-        <div class="d-flex justify-content-between container">
-          <p class="text-dark">사업자번호 : 183-521-45237 &nbsp 전화 : 010-6530-1591 &nbsp 이메일 : yorijori@gmail.com</p>
-          <p class=""><img src="img/logo.png" alt="" class="" /></p>
+        <div class="d-flex Company-information-sub pt-2">
+          <p class="text-dark">회사명 : YORIJORI컴퍼니</p>
+          <p class="ps-3">회사번호 : 031)442-5869</p>
+          <p class="ps-3">대표자 : 끝내조</p>
+          <p class="ps-3">개인정보관리책임자 : 끝내조원</p>
         </div>
+        <div class="d-flex Company-information-sub ">
+          <p class="text-dark">사업자번호 : 183-521-45237</p>
+          <p class="ps-3">전화 : 010-6530-1591</p>
+          <p class="ps-3">이메일 : yorijori@gmail.com</p>
+        </div>
+        <p class="text-end"><img src="img/logo.png" alt="" class="" /></p>
         <div class="border-top border-white">
-          <p class="text-center pb-4 pt-4">Copyright © yorijori All Right Reserved.</p>
+          <p class="text-center pb-4 pt-4 m-0">Copyright © yorijori All Right Reserved.</p>
         </div>
       </div>
     </footer>
