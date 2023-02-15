@@ -73,12 +73,20 @@ table {
 
 /* sidebar */
 .fixed-right {
-  width: 10%;
+  width: 7%;
   position: fixed;
   top: 20%;
-  right: 20px;
+  right: 0;
   z-index: 9999999;
   display: block;
+}
+
+#sidebar-wrapper .list-group {
+  --bs-list-group-border-width: none !important;
+}
+
+#sidebar-wrapper a:nth-child(n+2):nth-child(-n+7):hover {
+  background-color: #fff348 !important;
 }
 
 /* store */
@@ -87,7 +95,7 @@ table {
 }
 
 #store a:hover img {
-  box-shadow: 6px 6px 5px #333;
+  box-shadow: 6px 6px 10px #5c5c5c;
 }
 
 /* chef */
@@ -11116,7 +11124,7 @@ big,
 cite,
 code,
 del,
-dfn,
+drn,
 em,
 img,
 ins,
@@ -11250,21 +11258,24 @@ input[type=submit] {
 }
 
 .img_g {
-  width: 100%;
+  display: inline-block;
+  width: 220px;
+  height: 60px;
 }
 
 .header {
+  justify-content: space-around;
+  align-items: center;
   padding: 15px;
   background-color: #fff;
 }
 
-.logo {
-  width: 166px;
-  margin-right: 40px;
-}
-
 .nav-link {
   color: #191919;
+}
+
+.nav-side {
+  align-items: center;
 }
 
 .ico_search {
@@ -11308,19 +11319,18 @@ input[type=submit] {
   height: 600px;
 }
 
-.nav-link:hover {
-  color: #ffa806 !important;
-}
-
 .subdep {
   width: 100%;
   position: absolute;
   background-color: #ffa806;
   display: none;
-  margin-top: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-radius: 16px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+  z-index: 10000000000000000;
+}
+
+.subdep a {
+  display: inline-block;
 }
 
 .subdep li a:hover {
@@ -11331,10 +11341,48 @@ input[type=submit] {
   position: relative;
 }
 
+.onedep > a {
+  height: 70px;
+  padding-top: 28px;
+}
+
 .onedep:hover .subdep {
   display: block;
 }
 
+@media (max-width: 575px) {
+  .Company-information-sub {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  .Company-information-sub {
+    display: block !important;
+  }
+  .Company-information-sub p {
+    padding-left: 0 !important;
+  }
+  .menu-bar {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .nav-main-menu {
+    display: none;
+  }
+  .frm_sch {
+    display: none;
+  }
+  .nav-side-menu {
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+  }
+  .sns-information {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
@@ -11396,6 +11444,7 @@ input[type=submit] {
 
 .menu .nav-link.active {
   background-color: orange;
+  color: #fff6e6;
 }
 
 .menu .tab-content .tab-header {
@@ -11407,12 +11456,6 @@ input[type=submit] {
   text-transform: uppercase;
   color: #676775;
   margin-bottom: 0;
-}
-
-.menu .tab-content .tab-header h3, .menu .tab-content .tab-header .h3 {
-  font-size: 36px;
-  font-weight: 600;
-  color: var(--color-primary);
 }
 
 .menu .tab-content .menu-item {
@@ -11460,6 +11503,24 @@ input[type=submit] {
 .main-sub {
   background-color: #676775;
   height: 300px;
+}
+
+.Company-information {
+  width: 800px;
+}
+
+.Company-information p a {
+  font-size: 14px !important;
+}
+
+.Company-information p a {
+  display: block;
+  width: 120px;
+  text-align: center;
+}
+
+.Company-information-sub p {
+  font-size: 12px;
 }
 
 /* $info: $cyan !default;
