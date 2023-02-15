@@ -212,8 +212,7 @@ input[type="submit"] {
     position:absolute;
     background-color:#ffa806;
     display: none;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-radius: 16px;
     box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
     z-index: 9999999999999999;
 }
@@ -227,7 +226,7 @@ input[type="submit"] {
   position: relative;
   
 }
-.onedep a{
+.onedep > a{
 
   height: 70px;
   padding-top: 28px;

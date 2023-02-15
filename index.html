@@ -11,35 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- sec5 -->
     <link rel="stylesheet" href="css/sec5.css" />
   </head>
   <body>
-    <header class="header p-0 d-flex">
-        <a href="#none" class="logo">
-          <img src="./img/Group 285.svg" alt="YORI JORI" class="img_g" />
-        </a>
-        <div class="d-flex flex-wrap align-items-center nav-main">
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 nav-main-menu">
+    <header class="header">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="#none" class="logo">
+            <img src="img/logo.png" alt="YORI JORI" class="img_g" />
+          </a>
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li class="onedep">
               <a href="#" class="nav-link px-4 text-dark font">인기추천</a>
               <ul class="subdep">
                 <li class="pb-2">
                   <a href="#" class="text-dark">셰프</a>
                 </li>
-                <li class="pb-2"><a href="#" class="text-dark">레시피</a></li>
+                <li class="py-2"><a href="#" class="text-dark p-0">레시피</a></li>
               </ul>
             </li>
-            <li class="onedep"><a href="#" class="nav-link px-4 text-dark">스토어</a></li>
-            <li class="onedep"><a href="#" class="nav-link px-4 text-dark">레시피</a></li>
-            <li class="onedep"><a href="#" class="nav-link px-4 text-dark">게시판</a></li>
+            <li><a href="#" class="nav-link px-4 text-dark">스토어</a></li>
+            <li><a href="#" class="nav-link px-4 text-dark">레시피</a></li>
+            <li><a href="#" class="nav-link px-4 text-dark">게시판</a></li>
           </ul>
-        </div>
-       </div>
-         <!-- 검색 -->
-        <div class="d-flex nav-side">
+
+          <!-- 검색 -->
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
             <div class="frm_sch">
               <input type="search" class="form-control" id="search_term" placeholder="레시피를 검색하세요." aria-label="Search" />
@@ -48,12 +48,14 @@
               </button>
             </div>
           </form>
-          <div class="d-flex justify-content-end">
-            <div class="nav-side-menu"><a href="#" class="text-dark">로그인</a></div>
-            <div class="px-1 nav-side-menu ">/</div>
-            <div class="nav-side-menu"><a href="#" class="text-dark">회원가입</a></div>
-            <div><a href="#" class="d-lg-none menu-bar"><img src="./img/Vector.svg" alt=""></a></div>
+
+          <div class="d-flex">
+            <div><a href="#" class="text-dark">로그인</a></div>
+            <div class="px-1">/</div>
+            <div><a href="#" class="text-dark">회원가입</a></div>
           </div>
+        </div>
+      </div>
     </header>
     <!-- //header -->
 
@@ -123,75 +125,46 @@
     </section>
     <!-- //mainSlider -->
     <!-- ======= Menu Section ======= -->
-    <section id="menu" class="menu">
+    <section id="menu" class="menu py-5 my-5">
       <div class="container" data-aos="fade-up">
         <div class="section-header text-center my-5">
           <h2 class="fw-bold">오늘 나의 YORI는?</h2>
         </div>
 
-        <ul
-          class="nav nav-tabs d-flex flex-wrap justify-content-center"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <ul class="nav nav-tabs d-flex flex-wrap justify-content-center" data-aos="fade-up" data-aos-delay="200">
           <li class="nav-item">
-            <a
-              class="nav-link active show"
-              data-bs-toggle="tab"
-              data-bs-target="#menu-cam"
-            >
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-cam">
               <h4>#캠핑가서뭐먹지</h4>
             </a>
           </li>
           <!-- End tab nav item -->
 
           <li class="nav-item">
-            <a
-              class="nav-link"
-              data-bs-toggle="tab"
-              data-bs-target="#menu-home"
-            >
-              <h4>#홈파티</h4> </a
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-home"> <h4>#홈파티</h4> </a
             ><!-- End tab nav item -->
           </li>
 
           <li class="nav-item">
-            <a
-              class="nav-link"
-              data-bs-toggle="tab"
-              data-bs-target="#menu-easy"
-            >
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-easy">
               <h4>#누워서도가능해</h4>
             </a>
           </li>
           <!-- End tab nav item -->
 
           <li class="nav-item">
-            <a
-              class="nav-link"
-              data-bs-toggle="tab"
-              data-bs-target="#menu-broke"
-            >
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-broke">
               <h4>#이별후먹게되는</h4>
             </a>
           </li>
           <!-- End tab nav item -->
           <li class="nav-item">
-            <a
-              class="nav-link"
-              data-bs-toggle="tab"
-              data-bs-target="#menu-month"
-            >
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-month">
               <h4>#제철요리</h4>
             </a>
           </li>
           <!-- End tab nav item -->
           <li class="nav-item">
-            <a
-              class="nav-link"
-              data-bs-toggle="tab"
-              data-bs-target="#menu-house"
-            >
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-house">
               <h4>#자취요리</h4>
             </a>
           </li>
@@ -213,10 +186,7 @@
             <div class="row gy-5">
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                    src="img/c_food6.jpeg"
-                    class="menu-img img-fluid"
-                    alt=""/>
+                  <img src="img/c_food6.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>숯불 닭꼬치 | 요리조리</h4>
@@ -226,7 +196,7 @@
 
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img src="img/c_food9.jpeg" class="menu-img img-fluid" alt=""/>
+                  <img src="img/c_food9.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>감바스 알 아히요 | 요리조리</h4>
@@ -236,7 +206,7 @@
 
               <div class="col-lg-4 menu-item d-none d-lg-block">
                 <div class="food_box">
-                  <img src="img/k_food8.jpeg" class="menu-img img-fluid" alt=""/>
+                  <img src="img/k_food8.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>부대찌개 | 요리조리</h4>
@@ -257,11 +227,7 @@
             <div class="row gy-5">
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/a_food2.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/a_food2.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>명란 파스타</h4>
@@ -271,11 +237,7 @@
 
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/c_food8.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/c_food8.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>퀘사디아</h4>
@@ -285,11 +247,7 @@
 
               <div class="col-lg-4 menu-item d-none d-lg-block">
                 <div class="food_box">
-                  <img
-                      src="img/a_food3.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/a_food3.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>라자냐</h4>
@@ -308,11 +266,7 @@
             <div class="row gy-5">
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/a_food7.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/a_food7.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>스크램블</h4>
@@ -322,11 +276,7 @@
 
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/k_food19.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/k_food19.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>삼각김밥</h4>
@@ -335,14 +285,10 @@
               <!-- Menu Item -->
 
               <div class="col-lg-4 menu-item d-none d-lg-block">
-               <div class="food_box">
-                 <img
-                      src="img/c_food14.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                <div class="food_box">
+                  <img src="img/c_food14.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
-               </div>
+                </div>
                 <h4>메밀 소바</h4>
                 <p class="ingredients">#누워서도가능해 #답답할때</p>
               </div>
@@ -359,11 +305,7 @@
             <div class="row gy-5">
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/c_food5.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/c_food5.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>닭발</h4>
@@ -373,11 +315,7 @@
 
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/c_food10.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/c_food10.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>낙지볶음</h4>
@@ -387,11 +325,7 @@
 
               <div class="col-lg-4 menu-item d-none d-lg-block">
                 <div class="food_box">
-                  <img
-                      src="img/k_food6.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/k_food6.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>떡볶이</h4>
@@ -409,11 +343,7 @@
             <div class="row gy-5">
               <div class="col-lg-4 menu-item d-none d-lg-block">
                 <div class="food_box">
-                  <img
-                      src="img/k_food15.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/k_food15.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>가지덮밥</h4>
@@ -423,13 +353,9 @@
 
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/c_food11.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
-                <i class="bi bi-heart bi-heart-fill"></i> 
-              </div>
+                  <img src="img/c_food11.jpeg" class="menu-img img-fluid" alt="" />
+                  <i class="bi bi-heart bi-heart-fill"></i>
+                </div>
                 <h4>골뱅이 무침</h4>
                 <p class="ingredients">#제철음식 #겨울에서봄 #술안주</p>
               </div>
@@ -437,11 +363,7 @@
 
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/k_food22.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/k_food22.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>비빔밥</h4>
@@ -458,11 +380,7 @@
             <div class="row gy-5">
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/t_food1.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/t_food1.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>김치새우볶음밥</h4>
@@ -472,11 +390,7 @@
 
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/k_food1.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/k_food1.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>소시지 야채볶음</h4>
@@ -485,14 +399,10 @@
               <!-- Menu Item -->
 
               <div class="col-lg-4 menu-item d-none d-lg-block">
-               <div class="food_box">
-                 <img
-                      src="img/k_food9.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                <div class="food_box">
+                  <img src="img/k_food9.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
-               </div>
+                </div>
                 <h4>제육볶음</h4>
                 <p class="ingredients">#자취요리 #숙성시켜 #한식</p>
               </div>
@@ -507,11 +417,7 @@
             <div class="row gy-5">
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/k_food14.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/k_food14.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>소고기 무국</h4>
@@ -521,11 +427,7 @@
 
               <div class="col-lg-4 menu-item">
                 <div class="food_box">
-                  <img
-                      src="img/k_food7.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/k_food7.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>김치전</h4>
@@ -535,11 +437,7 @@
 
               <div class="col-lg-4 menu-item d-none d-lg-block">
                 <div class="food_box">
-                  <img
-                      src="img/k_food20.jpeg"
-                      class="menu-img img-fluid"
-                      alt=""
-                  />
+                  <img src="img/k_food20.jpeg" class="menu-img img-fluid" alt="" />
                   <i class="bi bi-heart bi-heart-fill"></i>
                 </div>
                 <h4>미역국</h4>
@@ -554,7 +452,7 @@
     </section>
     <!-- End Menu Section -->
     <!-- store -->
-    <section id="store" class="bg-light py-5">
+    <section id="store" class="pb-5">
       <div class="container-fluid">
         <a href="./Subpage.html"><img src="img/store_bg.png" alt="" class="w-100" /></a>
       </div>
@@ -676,7 +574,7 @@
     <!-- //chef -->
 
     <!-- section5_random -->
-    <section class="sec5_container bg-light">
+    <section class="sec5_container bg-light py-5">
       <div class="container">
         <h1 class="display-6 pt-5 mb-5 fw-semibold text-center random_title">
           <span class="text-warning fw-bold txt_title">YORIJORI</span>
@@ -726,7 +624,7 @@
           <p class="ps-3">대표자 : 끝내조</p>
           <p class="ps-3">개인정보관리책임자 : 끝내조원</p>
         </div>
-        <div class="d-flex Company-information-sub ">
+        <div class="d-flex Company-information-sub">
           <p class="text-dark">사업자번호 : 183-521-45237</p>
           <p class="ps-3">전화 : 010-6530-1591</p>
           <p class="ps-3">이메일 : yorijori@gmail.com</p>
