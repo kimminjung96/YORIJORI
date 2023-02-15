@@ -207,9 +207,6 @@ input[type="submit"] {
   height: 600px;
 }
 
-.nav-link:hover{
-  color: #ffa806 !important;
-}
 .subdep{
     width: 100%;
     position:absolute;
@@ -343,6 +340,7 @@ input[type="submit"] {
 
 .menu .nav-link.active {
   background-color: orange;
+  color: #fff6e6;
 }
 
 .menu .tab-content .tab-header {
@@ -356,11 +354,6 @@ input[type="submit"] {
   margin-bottom: 0;
 }
 
-.menu .tab-content .tab-header h3 {
-  font-size: 36px;
-  font-weight: 600;
-  color: var(--color-primary);
-}
 
 .menu .tab-content .menu-item {
   -moz-text-align-last: center;
