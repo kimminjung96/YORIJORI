@@ -8,4 +8,4 @@
 7. 랜덤화면 출력시 fade in 효과(후순위)
 8. 그림자 블러효과 더주기
 9. 버튼누르는 설명 상세히 표기.
-10 x-scroll hidden하기
+10. x-scroll hidden하기
