@@ -1,8 +1,8 @@
 //top_btn_hide
-top_btn_hide();
-function top_btn_hide(){
+sidebar_hide();
+function sidebar_hide(){
     $(document).ready(function () {
-        $(".btn_top").css('display','none');
+        $("#sidebar-wrapper").css('display','none');
       });
 }
 
@@ -11,9 +11,9 @@ top_btn();
 function top_btn() {
     $(window).scroll(function () {
         if ($(document).scrollTop() > $(window).height() / 2) {
-            $(".btn_top").fadeIn(300);
+            $("#sidebar-wrapper").fadeIn(300);
         } else {
-            $(".btn_top").fadeOut(300);
+            $("#sidebar-wrapper").fadeOut(300);
         }
     });
     $(".btn_top").click(function () {

@@ -81,8 +81,12 @@ table {
   display: block;
 }
 
-.list-group {
+#sidebar-wrapper .list-group {
   --bs-list-group-border-width: none !important;
+}
+
+#sidebar-wrapper a:nth-child(n+2):nth-child(-n+7):hover {
+  background-color: #fff348 !important;
 }
 
 /* store */
@@ -91,7 +95,7 @@ table {
 }
 
 #store a:hover img {
-  box-shadow: 6px 6px 5px #333;
+  box-shadow: 6px 6px 10px #5c5c5c;
 }
 
 /* chef */
@@ -11409,4 +11413,4 @@ input[type=submit] {
 /* $info: $cyan !default;
   $warning: $yellow !default;
   $danger: $red !default;
-   */
+   *//*# sourceMappingURL=main.css.map */
