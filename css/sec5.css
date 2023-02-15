@@ -9,19 +9,7 @@
   top: 95px;
   left: 50%;
   transform: translateX(-50%);
-  -webkit-animation: slide 2s ease-in-out;
-          animation: slide 2s ease-in-out;
-}
-
-@-webkit-keyframes slide {
-  from {
-    top: 300px;
-    opacity: 0;
-  }
-  to {
-    top: 95px;
-    opacity: 1;
-  }
+  animation: slide 2s ease-in-out;
 }
 
 @keyframes slide {
@@ -32,16 +20,6 @@
   to {
     top: 95px;
     opacity: 1;
-  }
-}
-@-webkit-keyframes disappear {
-  from {
-    top: 95px;
-    opacity: 1;
-  }
-  to {
-    top: 300px;
-    opacity: 0;
   }
 }
 @keyframes disappear {
@@ -60,25 +38,14 @@
   border: solid 10px #ffa906;
   border-radius: 15px;
   padding: 0px;
-  -webkit-animation: up-down 1.4s infinite ease-in-out alternate;
-          animation: up-down 1.4s infinite ease-in-out alternate; /* 애니메이션 
+  animation: up-down 1.4s infinite ease-in-out alternate; /* 애니메이션 
 정방향 재생 후 역방향 재생 */
   transition: all 0.3s linear;
 }
 .change:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
   border: solid 10px #b6dc49;
   cursor: wait;
-}
-
-@-webkit-keyframes up-down {
-  from {
-    transform: translatey(0px);
-  }
-  to {
-    transform: translatey(-15px);
-  }
 }
 
 @keyframes up-down {
@@ -133,9 +100,6 @@
 .btn_css:hover {
   box-shadow: 0px 15px 20px rgba(255, 169, 6, 0.3);
   transform: translateY(-7px);
-<<<<<<< HEAD
-}
-=======
 }
 
 .bg_chief {
@@ -148,19 +112,7 @@
 }
 
 .txt_blink {
-  -webkit-animation: blink 3s 3s infinite linear;
-          animation: blink 3s 3s infinite linear;
-}
-@-webkit-keyframes blink {
-  0% {
-    visibility: hidden;
-  }
-  50% {
-    visibility: hidden;
-  }
-  1000% {
-    visibility: visible;
-  }
+  animation: blink 3s 3s infinite linear;
 }
 @keyframes blink {
   0% {
@@ -172,5 +124,4 @@
   1000% {
     visibility: visible;
   }
-}/*# sourceMappingURL=sec5.css.map */
->>>>>>> origin
+}
