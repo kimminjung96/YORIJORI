@@ -3,7 +3,7 @@ let sub_text = document.querySelector(".sub_title");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY; //스크롤 y좌표 가져옴
-  console.log(value);
+  // console.log(value);
 
   if (value < 2300) {
     //js에서 css변경
@@ -39,7 +39,7 @@ let scroll_timer = 1000;
 
 /* click event*/
 function auto_scroll() {
-  window.scrollTo({ top: 3658, behavior: "smooth" }); //scroll y : 3658
+  window.scrollTo({ top: 3604, behavior: "smooth" }); //scroll y : 3604
 }
 searchButton1.addEventListener("click", () => {
   let food_type = "korean";
