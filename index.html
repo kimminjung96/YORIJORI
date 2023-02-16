@@ -23,11 +23,10 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="#none" class="logo">
+        <div class="m992 d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="index.html" class="logo">
             <img src="img/logo.svg" alt="yorijori_logo" class="img_g" />
           </a>
-
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><a href="#" class="nav-link px-4 text-dark">레시피</a></li>
             <li><a href="#" class="nav-link px-4 text-dark">인기추천</a></li>
@@ -36,7 +35,7 @@
           </ul>
 
           <!-- 검색 -->
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-none d-lg-block" role="search">
             <div class="frm_sch">
               <input type="search" class="form-control" id="search_term" placeholder="레시피를 검색하세요." aria-label="Search" />
               <button type="button" class="btn_sch" id="search">
@@ -45,10 +44,41 @@
             </div>
           </form>
 
-          <div class="d-flex">
-            <div><a href="#" class="text-dark">로그인</a></div>
-            <div class="px-1">/</div>
-            <div><a href="#" class="text-dark">회원가입</a></div>
+          <div class="d-flex position-r">
+            <div class="d-none d-lg-block"><a href="#" class="text-dark">로그인 /</a></div>
+            <div class="d-none d-lg-block"><a href="#" class="text-dark">&nbsp;회원가입</a></div>
+            <div class="d-md-block d-lg-none ham position-absolute">
+              <nav class="navbar navbar-light">
+                <div class="container-fluid ham_menu">
+                  <button class="toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">YORIJORI</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">레시피</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">인기추천</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">스토어</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">게시판</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+        
           </div>
         </div>
       </div>
@@ -582,9 +612,10 @@
         <p class="h5 mt-3 mb-5 sub_title">요리조리가 제안하는 레시피로 고민을 덜어보세요!</p>
 
         <!-- qestion box -->
-        <div class="row d-flex justify-content-center mb-5 pt-5 random_box">
+        <div class="row d-flex justify-content-center m-2 pt-5 random_box">
           <img src="./img/sec5_dish.jpg" alt="랜덤이미지" class="col-lg-6 col-md-10 change" />
         </div>
+
         <!-- random img -->
         <div class="row">
           <div class="col-lg-4 col-sm-6 mx-auto mb-4 content1"></div>
@@ -592,16 +623,17 @@
           <div class="col-lg-4 col-sm-6 mx-auto mb-4 content3"></div>
         </div>
         <p class="h5 mt-0 mb-5 text-center txt_guide">아래 버튼을 클릭하여 추천 레시피를 확인하세요!</p>
+
         <!-- random btn -->
-        <div class="row justify-content-md-center">
-          <button class="col-lg-3 col-sm-5 mx-auto btn btn-warning text-white m-5 p-3 btn_css btn_kr" type="button">korean</button>
-          <button class="col-lg-3 col-sm-5 mx-auto btn btn-warning m-5 p-3 btn_css btn_wc" type="button"><div class="js-odoo slot"></div></button>
-          <button class="col-lg-3 col-sm-5 mx-auto btn btn-warning text-white m-5 p-3 btn_css btn_jp" type="button">japanese</button>
+        <div class="row justify-content-md-center m-4">
+          <button class="col-lg-3 col-sm-10 mx-auto btn btn-warning text-white m-5 p-3 btn_css btn_kr" type="button">korean</button>
+          <button class="col-lg-3 col-sm-10 mx-auto btn btn-warning m-5 p-3 btn_css btn_wc" type="button"><div class="js-odoo slot"></div></button>
+          <button class="col-lg-3 col-sm-10 mx-auto btn btn-warning text-white m-5 p-3 btn_css btn_jp" type="button">japanese</button>
         </div>
       </div>
     </section>
-
     <!-- //section5_random -->
+
     <!-- footer -->
     <footer>
       <div class="container">
@@ -631,7 +663,7 @@
             <p class="pe-3">전화 : 010-6530-1591</p>
             <p>이메일 : yorijori@gmail.com</p>
           </div>
-          <div class="position-r"><img src="img/logo.png" alt=""/></div>
+          <div class="position-r"><img src="img/logo.png" alt="" /></div>
         </div>
         <div class="border-top border-white">
           <p class="text-center pb-4 pt-4 m-0">Copyright © yorijori All Right Reserved.</p>

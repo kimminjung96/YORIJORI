@@ -11,7 +11,9 @@
   --bs-list-group-border-width: none !important;
   box-shadow: 3px 3px 10px #5c3d0352 ;
 }
-
+#sidebar-wrapper a.bg-white{
+  transition: all 0.3s ease;
+}
 #sidebar-wrapper a:nth-child(n+2):nth-child(-n+7):hover{
   background-color: $secondary !important;
 }
