@@ -34,7 +34,6 @@
 }
 .change {
   text-align: center;
-  color: #e62200;
   border: solid 10px #ffa906;
   border-radius: 15px;
   padding: 0px;
@@ -43,9 +42,7 @@
   transition: all 0.3s linear;
 }
 .change:hover {
-  animation-play-state: paused;
   border: solid 10px #b6dc49;
-  cursor: wait;
 }
 
 @keyframes up-down {
@@ -63,42 +60,40 @@
   color: #ffa906;
 }
 
-.random_title {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+/* .random_title {
+  @include text_shadow();
 }
-
 .sub_title {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-}
-
+  @include text_shadow();
+} */
 .slot {
   font-family: "Inconsolata";
   font-weight: bold;
   font-size: 40px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   letter-spacing: 0px;
-  fill: #fff;
+  fill: #fff6e6;
 }
 
 .btn_css {
   font-family: "Inconsolata";
   font-weight: bold;
   font-size: 40px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   letter-spacing: 0px;
-  fill: #fff;
+  fill: #fff6e6;
   border: none;
   border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 15px rgba(119, 79, 4, 0.2);
   background-color: #ffa906;
-  color: #fff;
+  color: #fff6e6;
   letter-spacing: 4px;
   text-transform: uppercase;
   transition: all 0.3s ease 0s;
   outline: none;
 }
 .btn_css:hover {
-  box-shadow: 0px 15px 20px rgba(255, 169, 6, 0.3);
+  box-shadow: 0px 15px 20px rgba(255, 169, 6, 0.2);
   transform: translateY(-7px);
 }
 
@@ -112,6 +107,21 @@
 }
 
 .txt_blink {
+  animation: blink 3s 3s infinite linear;
+}
+@keyframes blink {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  1000% {
+    visibility: visible;
+  }
+}
+
+.txt_guide {
   animation: blink 3s 3s infinite linear;
 }
 @keyframes blink {

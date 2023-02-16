@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YORIJORI</title>
-    <!-- sec5 font 여러분 sec5주석달린것 순서 바꾸시면 안되요 ㅠㅠ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
     <!-- bootstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
@@ -21,21 +25,13 @@
       <div class="container">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a href="#none" class="logo">
-            <img src="img/logo.png" alt="YORI JORI" class="img_g" />
+            <img src="img/logo.svg" alt="yorijori_logo" class="img_g" />
           </a>
 
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li class="onedep">
-              <a href="#" class="nav-link px-4 text-dark font">인기추천</a>
-              <ul class="subdep">
-                <li class="pb-2">
-                  <a href="#" class="text-dark">셰프</a>
-                </li>
-                <li class="py-2"><a href="#" class="text-dark p-0">레시피</a></li>
-              </ul>
-            </li>
-            <li><a href="#" class="nav-link px-4 text-dark">스토어</a></li>
             <li><a href="#" class="nav-link px-4 text-dark">레시피</a></li>
+            <li><a href="#" class="nav-link px-4 text-dark">인기추천</a></li>
+            <li><a href="#" class="nav-link px-4 text-dark">스토어</a></li>
             <li><a href="#" class="nav-link px-4 text-dark">게시판</a></li>
           </ul>
 
@@ -59,17 +55,17 @@
     </header>
     <!-- //header -->
 
-    <section>
+    <section class="d-md-none d-lg-block">
       <div class="fixed-right" id="sidebar-wrapper">
-        <div class="list-group list-group-flush rounded-5 m-0 shadow-sm">
-          <a class="bg-primary list-group-item list-group-item-action list-group-item-white p-3 text-center" href="index.html"><img src="img/logo_side.png" alt="Logo" class="w-50"/></a>
+        <div class="list-group list-group-flush rounded-5 m-0">
+          <a class="bg-primary list-group-item list-group-item-action list-group-item-white p-3 text-center" href="index.html"><img src="img/logo_side.png" alt="Logo" class="w-50" /></a>
           <a class="bg-white list-group-item list-group-item-action list-group-item-white p-3 text-center" href="#!">인기추천</a>
           <a class="bg-white list-group-item list-group-item-action list-group-item-white p-3 text-center" href="#!">레시피</a>
           <a class="bg-white list-group-item list-group-item-action list-group-item-white p-3 text-center" href="#!">스토어</a>
           <a class="bg-white list-group-item list-group-item-action list-group-item-white p-3 text-center" href="#!">게시판</a>
           <a class="bg-white list-group-item list-group-item-action list-group-item-white p-3 text-center" href="#!">찜한레시피</a>
           <a class="bg-white list-group-item list-group-item-action list-group-item-white p-3 text-center" href="#!">최근 본 레시피</a>
-          <a class="btn_top bg-secondary list-group-item list-group-item-action list-group-item-white p-3 text-center" href="#top">Top</a>
+          <a class="btn_top list-group-item list-group-item-action list-group-item-white p-3 text-center" href="#top">Top</a>
         </div>
       </div>
     </section>
@@ -454,13 +450,13 @@
     <!-- store -->
     <section id="store" class="pb-5">
       <div class="container-fluid">
-        <a href="./Subpage.html"><img src="img/store_bg.png" alt="" class="w-100" /></a>
+        <a href="./Subpage.html"><img src="img/store_bg2.png" alt="" class="w-100" /></a>
       </div>
     </section>
     <!-- //store -->
 
     <!-- chef -->
-    <section id="chef" class="my-5 py-5 bg-light">
+    <section id="chef" class="my-5 py-5">
       <div class="container">
         <div class="row">
           <div class="col text-center mb-5">
@@ -482,10 +478,10 @@
                   <a href="#"><i class="bi bi-youtube fs-2 text-danger ms-3"></i></a>
                 </div>
               </div>
-              <img src="img/chef_ex1.png" alt="" />
+              <img src="img/chef5.jpg" alt="chef_img" />
               <div class="card-body">
                 <div class="card-title">
-                  <h3 class="text-muted">최우영</h3>
+                  <h3 class="text-muted">이딴딴</h3>
                 </div>
                 <div class="card-subject">
                   <p class="lead">#일식전문 #간편요리</p>
@@ -507,7 +503,7 @@
                   <a href="#"><i class="bi bi-youtube fs-2 text-danger ms-3"></i></a>
                 </div>
               </div>
-              <img src="img/chef_ex2.png" alt="" />
+              <img src="img/chef4.jpg" alt="chef_img" />
               <div class="card-body">
                 <div class="card-title">
                   <h3 class="text-muted">김민정</h3>
@@ -532,10 +528,10 @@
                   <a href="#"><i class="bi bi-youtube fs-2 text-danger ms-3"></i></a>
                 </div>
               </div>
-              <img src="img/chef_ex3.png" alt="" />
+              <img src="img/chef3.jpg" alt="chef_img" />
               <div class="card-body">
                 <div class="card-title">
-                  <h3 class="text-muted">이윤재</h3>
+                  <h3 class="text-muted">김형섭</h3>
                 </div>
                 <div class="card-subject">
                   <p class="lead">#양식전문 #홈파티</p>
@@ -557,10 +553,10 @@
                   <a href="#"><i class="bi bi-youtube fs-2 text-danger ms-3"></i></a>
                 </div>
               </div>
-              <img src="img/chef_ex4.png" alt="" />
+              <img src="img/chef6.jpg" alt="chef_img" />
               <div class="card-body">
                 <div class="card-title">
-                  <h3 class="text-muted">김형섭</h3>
+                  <h3 class="text-muted">김망고</h3>
                 </div>
                 <div class="card-subject">
                   <p class="lead">#중식전문 #직화요리</p>
@@ -574,26 +570,30 @@
     <!-- //chef -->
 
     <!-- section5_random -->
-    <section class="sec5_container bg-light py-5">
+    <section class="sec5_container bg-light">
       <div class="container">
         <h1 class="display-6 pt-5 mb-5 fw-semibold text-center random_title">
-          <span class="text-warning fw-bold txt_title">YORIJORI</span>
+          <span><mark class="text-warning fw-bold txt_title pt-0 pb-0">YORIJORI</mark></span>
           의 랜덤 레시피는?
         </h1>
         <p class="h5 mt-3 mb-5 sub_title">요리조리가 제안하는 레시피로 고민을 덜어보세요!</p>
 
+        <!-- qestion box -->
         <div class="row d-flex justify-content-center mb-5 pt-5 random_box">
-          <img src="./img/sec5_dish.jpg" alt="랜덤이미지" class="col-6 change" />
+          <img src="./img/sec5_dish.jpg" alt="랜덤이미지" class="col-lg-6 col-md-10 change" />
         </div>
+        <!-- random img -->
         <div class="row">
           <div class="col-lg-4 col-sm-6 mx-auto mb-4 content1"></div>
           <div class="col-lg-4 col-sm-6 mx-auto mb-4 content2"></div>
           <div class="col-lg-4 col-sm-6 mx-auto mb-4 content3"></div>
         </div>
+        <p class="h5 mt-0 mb-5 text-center txt_guide">아래 버튼을 클릭하여 추천 레시피를 확인하세요!</p>
+        <!-- random btn -->
         <div class="row justify-content-md-center">
-          <button class="col-lg-3 col-sm-6 mx-auto btn btn-warning text-white m-5 p-3 btn_css btn_kr" type="button">korean</button>
-          <button class="col-lg-3 col-sm-6 mx-auto btn btn-warning m-5 p-3 btn_css" type="button"><div class="js-odoo slot"></div></button>
-          <button class="col-lg-3 col-sm-6 mx-auto btn btn-warning text-white m-5 p-3 btn_css" type="button">japanese</button>
+          <button class="col-lg-3 col-sm-5 mx-auto btn btn-warning text-white m-5 p-3 btn_css btn_kr" type="button">korean</button>
+          <button class="col-lg-3 col-sm-5 mx-auto btn btn-warning m-5 p-3 btn_css btn_wc" type="button"><div class="js-odoo slot"></div></button>
+          <button class="col-lg-3 col-sm-5 mx-auto btn btn-warning text-white m-5 p-3 btn_css btn_jp" type="button">japanese</button>
         </div>
       </div>
     </section>
@@ -639,14 +639,13 @@
     <!-- side_nav -->
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/side_nav.js"></script>
-    <!-- sec5 slot cdn -->
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <!-- sec5 slot cdn -->
     <script src="https://cdn.rawgit.com/coderitual/odoo/feature/codevember16/lib/odoo.js"></script>
     <!-- tab js -->
     <script src="js/heart.js"></script>
     <!-- sec5 js -->
     <script src="js/sec5.js"></script>
-    <script src="js/slot.js"></script>
     <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
