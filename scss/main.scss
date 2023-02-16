@@ -46,6 +46,17 @@ footer{
     display: none;
   }
 }
+@media (max-width: 576px) {
+  footer .sns-information img{
+    width: 35px;
+  }
+  footer .ci2{
+    flex-direction: column !important;
+  }
+  footer .ci2 p{
+    padding-left: 0 !important;
+  }
+}
 
 .position-r{
   position: relative;
