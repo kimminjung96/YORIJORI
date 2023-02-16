@@ -150,36 +150,36 @@ input[type="submit"] {
   display: inline-block;
   width: 170px;
 }
+
 .header {
   justify-content: space-around;
   align-items: center;
   padding: 15px;
   background-color: #fff;
-}
 
-.nav-link {
-  position: relative;
-  color: #191919;
+  .nav-link {
+    position: relative;
+    color: #191919;
 
-  
-  &::before{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 0%;
-    height: 3px;
-    background: $primary;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.5s;
-  }
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 0%;
+      height: 3px;
+      background: $primary;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.5s;
+    }
 
-  &:hover {
-    color: $primary !important;
+    &:hover {
+      color: $primary !important;
 
-    &::before{
-      width: 60%;
+      &::before {
+        width: 60%;
+      }
     }
   }
 }
@@ -257,41 +257,6 @@ input[type="submit"] {
   }
 }
 
-@media (max-width: 575px) {
-  .Company-information-sub {
-    display: block !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .Company-information-sub {
-    display: block !important;
-  }
-  .Company-information-sub p {
-    padding-left: 0 !important;
-  }
-  .menu-bar {
-    padding-right: 30px;
-  }
-}
-
-@media (max-width: 992px) {
-  .nav-main-menu {
-    display: none;
-  }
-  .frm_sch {
-    display: none;
-  }
-  .nav-side-menu {
-    display: none;
-  }
-  .menu-bar {
-    display: block;
-  }
-  .sns-information {
-    display: none;
-  }
-}
 
 // nav
 
@@ -318,8 +283,8 @@ input[type="submit"] {
 
 @media (max-width: 575px) {
   .menu .nav-link {
-    margin: 0 10px;
-    padding: 10px 0;
+    margin: 4px 4px;
+    padding: 10px 4px;
   }
 }
 @media (max-width: 992px) {
@@ -329,6 +294,12 @@ input[type="submit"] {
   .menu .tab-content .menu-item .food_box i {
     font-size: 65px;
   }
+}
+@media (max-width: 1200px) {
+  .menu .container ul {
+    width: 90%;
+  }
+  
 }
 .menu .nav-link i {
   padding-right: 15px;
@@ -342,12 +313,6 @@ input[type="submit"] {
   font-family: var(--font-secondary);
 }
 
-@media (max-width: 575px) {
-  .menu .nav-link h4 {
-    font-size: 10px;
-    padding: 0 5px;
-  }
-}
 .menu .nav-link:hover {
   color: var(--color-primary);
 }
@@ -429,4 +394,14 @@ input[type="submit"] {
 }
 .Company-information-sub p {
   font-size: 12px;
+}
+
+@media (max-width: 575px) {
+  .menu .nav-link h4 {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+  .menu .tab-content .tab-header{
+    padding: 10px 0;
+  }
 }
