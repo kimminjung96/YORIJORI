@@ -11529,6 +11529,12 @@ input[type=submit] {
   text-align-last: center;
 }
 
+.menu .tab-content .menu-item h4 span, .menu .tab-content .menu-item .h4 span {
+  font-weight: lighter;
+  font-size: 16px;
+  color: #333338;
+}
+
 .menu .tab-content .menu-item .menu-img {
   margin-bottom: 15px;
 }
