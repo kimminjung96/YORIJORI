@@ -80,7 +80,7 @@ async function sendApiRequest(f_tp) {
   let random_num = [];
   let i = 0;
 
-  // console.log(type);
+  console.log(type);
   //url
   let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${type}`);
   let data = await response.json();
@@ -403,15 +403,29 @@ function useApiData(data, rn, tp) {
     <div class="card m-4">
       <img src="${data.hits[num1].recipe.image}" class="card-img-top" alt="랜덤이미지">
       <div class="card-body" style="color:black">
-        <h5 class="card-title text-center">${title1}<br></h5>
-        <p class="card-text">칼로리: ${data.hits[num1].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)} Kcal</p>
-        <p class="card-text">탄수화물: ${data.hits[num1].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} g</p>
-        <p class="card-text">단백질: ${data.hits[num1].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} g</p>
-        <p class="card-text">지방: ${data.hits[num1].recipe.totalNutrients.FAT.quantity.toFixed(2)} g</p>
+        <h5 class="card-title text-center mt-1 mb-4 ">${title1}<br></h5>
+        <table class="table table-striped table-hover">
+          <tr>
+            <th>총 열량</th> <td>${data.hits[num1].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)}</td> <td>Kcal</td>
+          </tr>
+            <th>탄수화물</th> <td>${data.hits[num1].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} </td> <td>g</td>
+          </tr>
+          <tr>
+            <th>단백질</th> <td>${data.hits[num1].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} </td> <td>g</td>
+          </tr>
+          <tr>
+            <th>지방</th> <td>${data.hits[num1].recipe.totalNutrients.FAT.quantity.toFixed(2)} </td> <td>g</td>
+          </tr>
+          <tr>
+            <th>나트륨</th> <td>${data.hits[num1].recipe.totalNutrients.NA.quantity.toFixed(2)} </td> <td>mg</td>
+          </tr>
+          <tr>
+            <th>당</th> <td>${data.hits[num1].recipe.totalNutrients.SUGAR.quantity.toFixed(2)} </td> <td>g</td>
+          </tr>
+        </table>
       </div>
     </div>
-  </a>
-`;
+  </a>`;
 
   /* (${data.hits[num2].recipe.label}) */
   document.querySelector(".content2").innerHTML = `
@@ -419,26 +433,55 @@ function useApiData(data, rn, tp) {
     <div class="card m-4" >
       <img src="${data.hits[num2].recipe.image}" class="card-img-top" alt="랜덤이미지">
       <div class="card-body" style="color:black">
-        <h5 class="card-title text-center">${title2}<br></h5>
-        <p class="card-text">칼로리:  ${data.hits[num2].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)} Kcal</p>
-        <p class="card-text">탄수화물: ${data.hits[num2].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} g</p>
-        <p class="card-text">단백질: ${data.hits[num2].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} g</p>
-        <p class="card-text">지방: ${data.hits[num2].recipe.totalNutrients.FAT.quantity.toFixed(2)} g</p>
+        <h5 class="card-title text-center mt-1 mb-4">${title2}<br></h5>
+        <table class="table table-striped table-hover">
+        <tr>
+          <th>총 열량</th> <td>${data.hits[num2].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)}</td> <td>Kcal</td>
+        </tr>
+          <th>탄수화물</th> <td>${data.hits[num2].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} </td> <td>g</td>
+        </tr>
+        <tr>
+          <th>단백질</th> <td>${data.hits[num2].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} </td> <td>g</td>
+        </tr>
+        <tr>
+          <th>지방</th> <td>${data.hits[num2].recipe.totalNutrients.FAT.quantity.toFixed(2)} </td> <td>g</td>
+        </tr>
+        <tr>
+          <th>나트륨</th> <td>${data.hits[num2].recipe.totalNutrients.NA.quantity.toFixed(2)} </td> <td>mg</td>
+        </tr>
+        <tr>
+          <th>당</th> <td>${data.hits[num2].recipe.totalNutrients.SUGAR.quantity.toFixed(2)} </td> <td>g</td>
+        </tr>
+      </table>
       </div>
     </div>
-  </a>
-`;
+  </a>`;
 
   document.querySelector(".content3").innerHTML = `
   <a href="${data.hits[num3].recipe.url}" target="_blank">
     <div class="card m-4" >
       <img src="${data.hits[num3].recipe.image}" class="card-img-top" alt="랜덤이미지">
       <div class="card-body" style="color:black">
-        <h5 class="card-title text-center">${title3}<br></h5>
-        <p class="card-text">칼로리:  ${data.hits[num3].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)} Kcal</p>
-        <p class="card-text">탄수화물: ${data.hits[num3].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} g</p>
-        <p class="card-text">단백질: ${data.hits[num3].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} g</p>
-        <p class="card-text">지방: ${data.hits[num3].recipe.totalNutrients.FAT.quantity.toFixed(2)} g</p>
+        <h5 class="card-title text-center mt-1 mb-4">${title3}<br></h5>
+        <table class="table table-striped table-hover">
+        <tr>
+          <th>총 열량</th> <td>${data.hits[num3].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)}</td> <td>Kcal</td>
+        </tr>
+          <th>탄수화물</th> <td>${data.hits[num3].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} </td> <td>g</td>
+        </tr>
+        <tr>
+          <th>단백질</th> <td>${data.hits[num3].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} </td> <td>g</td>
+        </tr>
+        <tr>
+          <th>지방</th> <td>${data.hits[num3].recipe.totalNutrients.FAT.quantity.toFixed(2)} </td> <td>g</td>
+        </tr>
+        <tr>
+          <th>나트륨</th> <td>${data.hits[num3].recipe.totalNutrients.NA.quantity.toFixed(2)} </td> <td>mg</td>
+        </tr>
+        <tr>
+          <th>당</th> <td>${data.hits[num3].recipe.totalNutrients.SUGAR.quantity.toFixed(2)} </td> <td>g</td>
+        </tr>
+      </table>
       </div>
     </div>
   </a>`;

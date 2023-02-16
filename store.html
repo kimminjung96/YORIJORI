@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>YORIJORI store</title>
+        <!-- Favicon-->
+        <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./favicon/site.webmanifest" />
+        <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+              <div class="m992 d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="./index.html" class="logo">
+                  <img src="img/logo.svg" alt="yorijori_logo" class="img_g" />
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="Subpage.html" class="nav-link px-4 text-dark">레시피</a></li>
+                  <li><a href="#" class="nav-link px-4 text-dark">인기추천</a></li>
+                  <li><a href="#" class="nav-link px-4 text-dark">스토어</a></li>
+                  <li><a href="#" class="nav-link px-4 text-dark">게시판</a></li>
+                </ul>
+      
+                <!-- 검색 -->
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-none d-lg-block" role="search">
+                  <div class="frm_sch">
+                    <input type="search" class="form-control" id="search_term" placeholder="레시피를 검색하세요." aria-label="Search" />
+                    <button type="button" class="btn_sch" id="search">
+                      <span class="ico_commm ico_search">검색</span>
+                    </button>
+                  </div>
+                </form>
+      
+                <div class="d-flex position-r">
+                  <div class="d-none d-lg-block"><a href="#" class="text-dark">로그인 /</a></div>
+                  <div class="d-none d-lg-block"><a href="#" class="text-dark">&nbsp;회원가입</a></div>
+                  <div class="d-md-block d-lg-none ham position-absolute">
+                    <nav class="navbar navbar-light">
+                      <div class="container-fluid ham_menu">
+                        <button class="toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                          <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">YORIJORI</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="Subpage.html">레시피</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">인기추천</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">스토어</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">게시판</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+              
+                </div>
+              </div>
+            </div>
+          </header>
+          <!-- //header -->
+    <main>
+        <div class="container-fluid">
+          <div id="carouselWithCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/store_bg_1.png" class="d-block w-100 h-auto" alt="Slide 1" />
+              </div>
+              <div class="carousel-item">
+                <img src="img/store_bg_2.png" class="d-block w-100 h-auto" alt="Slide 2" />
+              </div>
+              <div class="carousel-item">
+                <img src="img/store_bg_3.png" class="d-block h-auto w-100" alt="Slide 3" />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselWithCaptions" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselWithCaptions" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+    </main>
+      <!-- //mainSlider -->
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="text-center mb-5">20,000원 이상 구매시 무료배송!</h2>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem">인기</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="./img/k_food6.jpeg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <div class="card_name d-flex">
+                                        <h5 class="fw-bolder">매콤한 떡볶이 </h5>
+                                        <span class="m-1"> -밀키트</span>
+                                    </div>
+                                    <p>요리조리의 특별한 비법소스로<br> 만들어 더 맛있고 매콤합니다<br>난이도 : 🌶🌶🌶</p>
+                                    <!-- Product price-->
+                                    <div class="card_price">6,000원</div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니에 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">할인</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="./img/k_food8.jpeg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <div class="card_name d-flex">
+                                        <h5 class="fw-bolder">햄많은 부대찌개</h5>
+                                        <span class="m-1"> -밀키트</span>
+                                    </div>
+                                    <p>햄, 소세지, 김치, 다진고기, 라면사리 등 든든한 부대찌개<br>난이도 : 🌶 </p>
+                                    <!-- Product price-->
+                                    <div class="card_price">
+                                        <span class="text-muted text-decoration-line-through">12,000원</span>
+                                        10,000원
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니에 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="./img/c_food14.jpeg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <div class="card_name d-flex">
+                                        <h5 class="fw-bolder">시원한 메밀소바</h5>
+                                        <span class="m-1"> -가공품</span>
+                                    </div>
+                                    <p>쯔유와 메밀면의 만남<br>무더운 여름철에 시원한 국수<br>어떠신가요? </p>
+                                    <!-- Product price-->
+                                    1,500원
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니에 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/c_food9.jpeg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <div class="card_name d-flex">
+                                        <h5 class="fw-bolder">감바스 알 아히요</h5>
+                                        <span class="m-1"> -밀키트</span>
+                                    </div>
+                                    <p>올리브오일에 익힌 새우와 <br>마늘, 바게트를 함께! 마무리로 파스타까지!</p>
+                                    <!-- Product price-->
+                                    12,000원
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니에 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">할인</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="img/c_food6.jpeg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <div class="card_name d-flex">
+                                        <h5 class="fw-bolder">파프리카 닭꼬치</h5>
+                                        <span class="m-1"> -냉동</span>
+                                    </div>
+                                    <p>닭다리살과 파프리카의 만남! 숯불로 초벌해서 7분이면 바로먹는 닭꼬치 10개</p>
+                                    <!-- Product price-->
+                                    <div class="card_price">
+                                        <span class="text-muted text-decoration-line-through">20,000원</span>
+                                        18,000원
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니에 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="./img/t_food1.jpeg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <div class="card_name d-flex">
+                                        <h5 class="fw-bolder">새우 김치볶음밥</h5>
+                                        <span class="m-1"> -냉동</span>
+                                    </div>
+                                    <p>통통한 새우와 잘익은 김치를 함께 볶은 새우김치볶음밥<br> 아이들이 먹기 좋아요! </p>
+                                    <!-- Product price-->
+                                    3,500원
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니에 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="badge bg-primary text-white position-absolute" style="top: 0.5rem; right: 0.5rem">인기</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="./img/a_food2.jpeg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <div class="card_name d-flex">
+                                        <h5 class="fw-bolder">명란 파스타</h5>
+                                        <span class="m-1"> -밀키트</span>
+                                    </div>
+                                    <p>신선하고 짭잘한 명란젓과<br> 올리브 오일파스타와의 만남! 남녀노소 좋아하는 메뉴 </p>
+                                    <!-- Product price-->
+                                    6,000원
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니에 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">할인</div>
+                            <!-- Product image-->
+                            <img class="card-img-top" src="./img/k_food9.jpeg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <div class="card_name d-flex">
+                                        <h5 class="fw-bolder">제육볶음</h5>
+                                        <span class="m-1"> -밀키트</span>
+                                    </div>
+                                    <p>돼지 앞다리살과 요리조리만의 특별한 비법소스의 만남!<br> 많은 이의 소울푸드</p>
+                                    <!-- Product price-->
+                                    <div class="card_price">
+                                        <span class="text-muted text-decoration-line-through">7,000원</span>
+                                        6,500원
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">장바구니에 담기</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="d-flex">
+          <div class="ci1 pt-5 w-100">
+            <a href="#" class="pe-2 text-light">이용약관</a>
+            <a href="#" class="pe-2 text-light fw-bold">개인정보취급방침</a>
+            <a href="#" class="pe-2 text-light">고객센터</a>
+            <a href="#" class="pe-2 text-light">광고 제휴 문의</a>
+          </div>
+          <div class="flex-shrink-1 w-75 text-end pt-5 sns-information">
+            <a href=""><img src="img/ic_tw.png" alt="twitter icon" /></a>
+            <a href=""><img src="img/ic_inst.png" alt="instagram icon" /></a>
+            <a href=""><img src="img/ic_fb.png" alt="facebook icon" /></a>
+            <a href=""><img src="img/ic_yt.png" alt="youtube icon" /></a>
+          </div>
+        </div>
+        <div class="d-flex Company-information-sub pt-2 ci2">
+          <p class="text-light">회사명 : YORIJORI컴퍼니</p>
+          <p class="ps-2">회사번호 : 031)442-5869</p>
+          <p class="ps-2">대표자 : 끝내조</p>
+          <p class="ps-2">개인정보관리책임자 : 끝내조원</p>
+        </div>
+        <div class="d-flex Company-information-sub justify-content-between">
+          <div class="d-flex">
+            <p class="text-light pe-3">사업자번호 : 183-521-45237</p>
+            <p class="pe-3">전화 : 010-6530-1591</p>
+            <p>이메일 : yorijori@gmail.com</p>
+          </div>
+          <div class="position-r"><img src="img/logo_white.svg" alt="yorijori_logo" class="img_g" /></div>
+        </div>
+        <div class="border-top border-white">
+          <p class="text-center pb-4 pt-4 m-0">Copyright &copy; YORIJORI All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+      <!-- //footer -->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
