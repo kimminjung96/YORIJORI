@@ -23,11 +23,10 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="#none" class="logo">
+        <div class="m992 d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="index.html" class="logo">
             <img src="img/logo.svg" alt="yorijori_logo" class="img_g" />
           </a>
-
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
             <li><a href="#" class="nav-link px-4 text-dark">레시피</a></li>
             <li><a href="#" class="nav-link px-4 text-dark">인기추천</a></li>
@@ -36,7 +35,7 @@
           </ul>
 
           <!-- 검색 -->
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-none d-lg-block" role="search">
             <div class="frm_sch">
               <input type="search" class="form-control" id="search_term" placeholder="레시피를 검색하세요." aria-label="Search" />
               <button type="button" class="btn_sch" id="search">
@@ -45,17 +44,48 @@
             </div>
           </form>
 
-          <div class="d-flex">
-            <div><a href="#" class="text-dark">로그인</a></div>
-            <div class="px-1">/</div>
-            <div><a href="#" class="text-dark">회원가입</a></div>
+          <div class="d-flex position-r">
+            <div class="d-none d-lg-block"><a href="#" class="text-dark">로그인 /</a></div>
+            <div class="d-none d-lg-block"><a href="#" class="text-dark">&nbsp;회원가입</a></div>
+            <div class="d-md-block d-lg-none ham position-absolute">
+              <nav class="navbar navbar-light">
+                <div class="container-fluid ham_menu">
+                  <button class="toggler p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">YORIJORI</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">레시피</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">인기추천</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">스토어</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">게시판</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+        
           </div>
         </div>
       </div>
     </header>
     <!-- //header -->
 
-    <section class="d-md-none d-lg-block">
+    <section class="d-none d-lg-block">
       <div class="fixed-right" id="sidebar-wrapper">
         <div class="list-group list-group-flush rounded-5 m-0">
           <a class="bg-primary list-group-item list-group-item-action list-group-item-white p-3 text-center" href="index.html"><img src="img/logo_side.png" alt="Logo" class="w-50" /></a>

@@ -184,6 +184,29 @@ input[type="submit"] {
   }
 }
 
+.header .ham{
+  right: 0 !important;
+  bottom: -30px;
+}
+.toggler{
+  border: 1px solid #ccc;
+  border-radius: 10%;
+}
+.navbar-toggler-icon{
+  width: 2em;
+}
+
+
+@media (max-width: 992px) {
+  .header .nav {
+    display: none;
+  }
+  .header .m992 {
+    justify-content:space-between !important;
+  }
+}
+
+
 .nav-side {
   align-items: center;
 }
