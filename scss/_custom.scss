@@ -79,7 +79,7 @@ summary,
 time,
 mark,
 audio,
-a{
+a {
   text-decoration: none !important;
 }
 video {
@@ -148,8 +148,7 @@ input[type="submit"] {
 }
 .img_g {
   display: inline-block;
-  width: 220px;
-  height: 60px;
+  width: 170px;
 }
 .header {
   justify-content: space-around;
@@ -157,13 +156,35 @@ input[type="submit"] {
   padding: 15px;
   background-color: #fff;
 }
-.logo {
-}
 
 .nav-link {
+  position: relative;
   color: #191919;
+
+  
+  &::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background: $primary;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+  }
+
+  &:hover {
+    color: $primary !important;
+
+    &::before{
+      width: 60%;
+    }
+  }
 }
-.nav-side{
+
+.nav-side {
   align-items: center;
 }
 
@@ -207,76 +228,70 @@ input[type="submit"] {
   height: 600px;
 }
 
-.subdep{
-    width: 100%;
-    position:absolute;
-    background-color:#ffa806;
-    display: none;
-    border-radius: 16px;
-    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
-    z-index: 9999999999999999;
+.subdep {
+  width: 100%;
+  position: absolute;
+  background-color: #ffa806;
+  display: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+  z-index: 9999999999999999;
 }
-.subdep a{
+.subdep a {
   display: inline-block;
 }
-.subdep li a:hover{
+.subdep li a:hover {
   color: #fff !important;
 }
-.onedep{
+.onedep {
   position: relative;
-  
 }
-.onedep > a{
-
+.onedep > a {
   height: 70px;
   padding-top: 28px;
-
 }
 
-.onedep:hover{
-  .subdep{
+.onedep:hover {
+  .subdep {
     display: block;
   }
 }
 
-@media (max-width: 575px){
-  .Company-information-sub{
+@media (max-width: 575px) {
+  .Company-information-sub {
     display: block !important;
   }
 }
 
-@media (max-width: 767px){
-  .Company-information-sub{
+@media (max-width: 767px) {
+  .Company-information-sub {
     display: block !important;
   }
-  .Company-information-sub p{
+  .Company-information-sub p {
     padding-left: 0 !important;
   }
-  .menu-bar{
+  .menu-bar {
     padding-right: 30px;
   }
 }
 
-@media (max-width: 992px){
-  .nav-main-menu{
+@media (max-width: 992px) {
+  .nav-main-menu {
     display: none;
   }
-  .frm_sch{
+  .frm_sch {
     display: none;
   }
-  .nav-side-menu{
+  .nav-side-menu {
     display: none;
   }
-  .menu-bar{
+  .menu-bar {
     display: block;
   }
-.sns-information{
-  display: none;
+  .sns-information {
+    display: none;
+  }
 }
-  
-}
-
-
 
 // nav
 
@@ -286,7 +301,7 @@ input[type="submit"] {
 .menu .nav-tabs {
   border: 0;
 }
-.menu .container ul{
+.menu .container ul {
   width: 60%;
   margin: auto;
 }
@@ -299,7 +314,6 @@ input[type="submit"] {
   cursor: pointer;
   border: 1px solid #ee931c;
   border-radius: 20px;
-
 }
 
 @media (max-width: 575px) {
@@ -308,11 +322,11 @@ input[type="submit"] {
     padding: 10px 0;
   }
 }
-@media (max-width: 992px){
-  .menu .container ul{
+@media (max-width: 992px) {
+  .menu .container ul {
     width: 100%;
   }
-  .menu .tab-content .menu-item .food_box i{
+  .menu .tab-content .menu-item .food_box i {
     font-size: 65px;
   }
 }
@@ -354,7 +368,6 @@ input[type="submit"] {
   margin-bottom: 0;
 }
 
-
 .menu .tab-content .menu-item {
   -moz-text-align-last: center;
   text-align-last: center;
@@ -379,10 +392,10 @@ input[type="submit"] {
   color: #8d8d9b;
   margin-bottom: 5px;
 }
-.menu .tab-content .menu-item .food_box{
+.menu .tab-content .menu-item .food_box {
   position: relative;
 }
-.menu .tab-content .menu-item .food_box i{
+.menu .tab-content .menu-item .food_box i {
   position: absolute;
   font-size: 30px;
   bottom: 20px;
@@ -390,34 +403,30 @@ input[type="submit"] {
   right: 10px;
   cursor: pointer;
 }
-.menu .tab-content .menu-item .food_box i:hover{
+.menu .tab-content .menu-item .food_box i:hover {
   display: block;
 }
 //tab
 
 //Subpage 시작
 
-.main-sub{
+.main-sub {
   background-color: #676775;
   height: 300px;
 }
 
-
-
-
-
 //Footer 시작
-.Company-information{
+.Company-information {
   width: 800px;
 }
-.Company-information p a{
+.Company-information p a {
   font-size: 14px !important;
 }
-.Company-information p a{
+.Company-information p a {
   display: block;
   width: 120px;
   text-align: center;
- }
-.Company-information-sub p{
+}
+.Company-information-sub p {
   font-size: 12px;
 }
