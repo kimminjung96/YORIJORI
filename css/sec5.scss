@@ -119,3 +119,25 @@
 .txt_guide {
   @include text_blink;
 }
+
+@media (max-width: 576px) {
+  .sec5_container {
+    h1{
+      font-size: 24px;
+    }
+    p{
+      font-size: 14px;
+    }
+    .sub_title{
+      font-size: 14px;
+    } 
+    button{
+      font-size: 16px;
+    }
+  }
+
+  .slot {
+    font-size: 16px;
+  }
+}
+

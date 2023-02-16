@@ -144,4 +144,22 @@
   100% {
     visibility: visible;
   }
+}
+
+@media (max-width: 576px) {
+  .sec5_container h1 {
+    font-size: 24px;
+  }
+  .sec5_container p {
+    font-size: 14px;
+  }
+  .sec5_container .sub_title {
+    font-size: 14px;
+  }
+  .sec5_container button {
+    font-size: 16px;
+  }
+  .slot {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=sec5.css.map */
