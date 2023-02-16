@@ -130,7 +130,7 @@
   50% {
     visibility: hidden;
   }
-  1000% {
+  100% {
     visibility: visible;
   }
 }
@@ -141,7 +141,7 @@
   50% {
     visibility: hidden;
   }
-  1000% {
+  100% {
     visibility: visible;
   }
 }/*# sourceMappingURL=sec5.css.map */
