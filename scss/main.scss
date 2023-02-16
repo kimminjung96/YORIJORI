@@ -26,6 +26,19 @@ $dark: #393939;
   text-align: left !important;
 }
 
+footer{
+  background-color: #423b2f;
+  color: $light;
+}
+.position-r{
+  position: relative;
+}
+.position-r img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 @import "./reset";
 @import "./custom1";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
