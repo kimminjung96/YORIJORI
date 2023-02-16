@@ -11292,6 +11292,20 @@ input[type=submit] {
   width: 60%;
 }
 
+/* slider */
+.carousel-item {
+  /*  height: 100px !important; */
+}
+.carousel-item .carousel-caption > h5, .carousel-item .carousel-caption > .h5 {
+  font-size: 56px;
+}
+.carousel-item .carousel-caption > p.fw-semibold {
+  font-size: 30px;
+}
+.carousel-item .carousel-caption > p.hstag {
+  font-size: 24px;
+}
+
 .nav-side {
   align-items: center;
 }

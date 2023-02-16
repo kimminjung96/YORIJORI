@@ -184,6 +184,23 @@ input[type="submit"] {
   }
 }
 
+/* slider */
+.carousel-item {
+  /*  height: 100px !important; */
+
+  & .carousel-caption {
+    & > h5 {
+      font-size: 56px;
+    }
+    & > p.fw-semibold {
+      font-size: 30px;
+    }
+    & > p.hstag {
+      font-size: 24px;
+    }
+    
+  }
+}
 .nav-side {
   align-items: center;
 }
@@ -257,7 +274,6 @@ input[type="submit"] {
   }
 }
 
-
 // nav
 
 /*--------------------------------------------------------------
@@ -299,7 +315,6 @@ input[type="submit"] {
   .menu .container ul {
     width: 90%;
   }
-  
 }
 .menu .nav-link i {
   padding-right: 15px;
@@ -401,7 +416,7 @@ input[type="submit"] {
     font-size: 14px;
     padding: 0 8px;
   }
-  .menu .tab-content .tab-header{
+  .menu .tab-content .tab-header {
     padding: 10px 0;
   }
 }
