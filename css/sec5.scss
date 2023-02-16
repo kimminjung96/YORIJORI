@@ -19,7 +19,7 @@
 }
 .sub_title {
   position: absolute;
-  top: 95px;
+  top: 105px;
   left: 50%;
   transform: translateX(-50%);
   animation: slide 2s ease-in-out;
@@ -31,7 +31,7 @@
     opacity: 0;
   }
   to {
-    top: 95px;
+    top: 105px;
     opacity: 1;
   }
 }
@@ -73,18 +73,8 @@
 
 // slot -----------------------------------------------------------------
 
-/* .sec5_container {
-  background-color: #f7f5eb;
-} */
-.txt_title {
+/* .txt_title {
   color: #ffa906;
-}
-
-/* .random_title {
-  @include text_shadow();
-}
-.sub_title {
-  @include text_shadow();
 } */
 
 .slot {
@@ -109,13 +99,6 @@
   }
 }
 //slot end
-.bg_chief {
-  border-radius: 50%;
-  transition: all 1.5s linear;
-}
-.bg_chief:hover {
-  background-color: #fae1e1;
-}
 
 @mixin text_blink {
   animation: blink 3s 3s infinite linear;
@@ -132,9 +115,7 @@
   }
 }
 // text blink
-.txt_blink {
-  @include text_blink;
-}
+
 .txt_guide {
   @include text_blink;
 }
