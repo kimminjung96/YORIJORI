@@ -1,6 +1,6 @@
 /* sidebar */
 .fixed-right {
-  width: 7%;
+  width: 8%;
   position: fixed;
   top: 20%;
   right: 0;
@@ -21,6 +21,16 @@
   font-weight: bold;
   color: $primary;
 }
+
+@media (max-width: 1200px) {
+  #sidebar-wrapper {
+    font-size: 14px;
+  }
+  #sidebar-wrapper img{
+    width: 75% !important;
+  }
+}
+
 
 /* store */
 #store a img {

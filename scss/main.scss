@@ -30,6 +30,21 @@ footer{
   background-color: #423b2f;
   color: $light;
 }
+
+@media (max-width: 992px) {
+  footer .ci1{
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 768px) {
+  footer .ci1{
+    font-size: 12px !important;
+  }
+  footer .img_g{
+    display: none;
+  }
+}
+
 .position-r{
   position: relative;
 }

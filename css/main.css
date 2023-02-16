@@ -24,6 +24,19 @@ footer {
   color: #fffdf3;
 }
 
+@media (max-width: 992px) {
+  footer .ci1 {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 768px) {
+  footer .ci1 {
+    font-size: 12px !important;
+  }
+  footer .img_g {
+    display: none;
+  }
+}
 .position-r {
   position: relative;
 }
@@ -88,7 +101,7 @@ table {
 
 /* sidebar */
 .fixed-right {
-  width: 7%;
+  width: 8%;
   position: fixed;
   top: 20%;
   right: 0;
@@ -114,6 +127,14 @@ table {
   color: #ffa906;
 }
 
+@media (max-width: 1200px) {
+  #sidebar-wrapper {
+    font-size: 14px;
+  }
+  #sidebar-wrapper img {
+    width: 75% !important;
+  }
+}
 /* store */
 #store a img {
   transition: all 0.3s ease;
