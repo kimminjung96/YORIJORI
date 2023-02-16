@@ -39,7 +39,7 @@ let scroll_timer = 1000;
 
 /* click event*/
 function auto_scroll() {
-  window.scrollTo({ top: 3604, behavior: "smooth" }); //scroll y : 3604
+  window.scrollTo({ top: 3849, behavior: "smooth" }); //scroll y : 3849
 }
 searchButton1.addEventListener("click", () => {
   let food_type = "korean";
@@ -399,48 +399,48 @@ function useApiData(data, rn, tp) {
 
   //prind card
   document.querySelector(".content1").innerHTML = `
-<div class="card m-4">
-  <img src="${data.hits[num1].recipe.image}" class="card-img-top" alt="랜덤이미지">
-  <div class="card-body">
-    <h5 class="card-title text-center">${title1}<br></h5>
-    <p class="card-text">칼로리: ${data.hits[num1].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)} Kcal</p>
-    <p class="card-text">탄수화물: ${data.hits[num1].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} g</p>
-    <p class="card-text">단백질: ${data.hits[num1].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} g</p>
-    <p class="card-text">지방: ${data.hits[num1].recipe.totalNutrients.FAT.quantity.toFixed(2)} g</p>
-    
-    <a href="${data.hits[num1].recipe.url}" target="_blank"><img src="./img/img_200c.png" alt="조리법링크" class="d-block bg_chief"></a>
-    <a href="https://kr.freepik.com/free-vector/cute-bread-chef-waving-hand-cartoon-vector-icon-illustration-food-object-icon-concept-isolated-flat_24921538.htm#query=mascot%20chif&position=14&from_view=search&track=ais" target="_blank" style="font-size: 2px; "> IMG: Freepik</a>
-  </div>
-</div>
+  <a href="${data.hits[num1].recipe.url}" target="_blank">
+    <div class="card m-4">
+      <img src="${data.hits[num1].recipe.image}" class="card-img-top" alt="랜덤이미지">
+      <div class="card-body" style="color:black">
+        <h5 class="card-title text-center">${title1}<br></h5>
+        <p class="card-text">칼로리: ${data.hits[num1].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)} Kcal</p>
+        <p class="card-text">탄수화물: ${data.hits[num1].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} g</p>
+        <p class="card-text">단백질: ${data.hits[num1].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} g</p>
+        <p class="card-text">지방: ${data.hits[num1].recipe.totalNutrients.FAT.quantity.toFixed(2)} g</p>
+      </div>
+    </div>
+  </a>
 `;
 
   /* (${data.hits[num2].recipe.label}) */
   document.querySelector(".content2").innerHTML = `
-<div class="card m-4" >
-  <img src="${data.hits[num2].recipe.image}" class="card-img-top" alt="랜덤이미지">
-  <div class="card-body">
-  <h5 class="card-title text-center">${title2}<br></h5>
-  <p class="card-text">칼로리:  ${data.hits[num2].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)} Kcal</p>
-  <p class="card-text">탄수화물: ${data.hits[num2].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} g</p>
-  <p class="card-text">단백질: ${data.hits[num2].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} g</p>
-  <p class="card-text">지방: ${data.hits[num2].recipe.totalNutrients.FAT.quantity.toFixed(2)} g</p>
-  <a href="${data.hits[num2].recipe.url}" target="_blank"><img src="./img/img_200b.png" alt="조리법링크" class="d-block bg_chief"></a>
-  </div>
-</div>
-<h5 class="text-center txt_blink">캐릭터를 눌러 레시피를 확인하세요!</h5>`;
+  <a href="${data.hits[num2].recipe.url}" target="_blank">
+    <div class="card m-4" >
+      <img src="${data.hits[num2].recipe.image}" class="card-img-top" alt="랜덤이미지">
+      <div class="card-body" style="color:black">
+        <h5 class="card-title text-center">${title2}<br></h5>
+        <p class="card-text">칼로리:  ${data.hits[num2].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)} Kcal</p>
+        <p class="card-text">탄수화물: ${data.hits[num2].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} g</p>
+        <p class="card-text">단백질: ${data.hits[num2].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} g</p>
+        <p class="card-text">지방: ${data.hits[num2].recipe.totalNutrients.FAT.quantity.toFixed(2)} g</p>
+      </div>
+    </div>
+  </a>
+`;
 
   document.querySelector(".content3").innerHTML = `
-<div class="card m-4" >
-<img src="${data.hits[num3].recipe.image}" class="card-img-top" alt="랜덤이미지">
-<div class="card-body">
-<h5 class="card-title text-center">${title3}<br></h5>
-    <p class="card-text">칼로리:  ${data.hits[num3].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)} Kcal</p>
-    <p class="card-text">탄수화물: ${data.hits[num3].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} g</p>
-    <p class="card-text">단백질: ${data.hits[num3].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} g</p>
-    <p class="card-text">지방: ${data.hits[num3].recipe.totalNutrients.FAT.quantity.toFixed(2)} g</p>
-    <a href="${data.hits[num3].recipe.url}" target="_blank" ><img src="./img/img_200t.png" alt="조리법링크" class="d-block bg_chief"></a>
-    <a href="https://www.edamam.com/" target="_blank" style="font-size: 2px; "> API: edamam </a>
-  </div>
-</div>`;
+  <a href="${data.hits[num3].recipe.url}" target="_blank">
+    <div class="card m-4" >
+      <img src="${data.hits[num3].recipe.image}" class="card-img-top" alt="랜덤이미지">
+      <div class="card-body" style="color:black">
+        <h5 class="card-title text-center">${title3}<br></h5>
+        <p class="card-text">칼로리:  ${data.hits[num3].recipe.totalNutrients.ENERC_KCAL.quantity.toFixed(2)} Kcal</p>
+        <p class="card-text">탄수화물: ${data.hits[num3].recipe.totalNutrients.CHOCDF.quantity.toFixed(2)} g</p>
+        <p class="card-text">단백질: ${data.hits[num3].recipe.totalNutrients.PROCNT.quantity.toFixed(2)} g</p>
+        <p class="card-text">지방: ${data.hits[num3].recipe.totalNutrients.FAT.quantity.toFixed(2)} g</p>
+      </div>
+    </div>
+  </a>`;
 }
 /* //print card*/
