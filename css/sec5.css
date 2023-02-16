@@ -19,7 +19,7 @@
     opacity: 0;
   }
   to {
-    top: 95px;
+    top: 105px;
     opacity: 1;
   }
 }
@@ -119,17 +119,7 @@
   transform: translateY(-7px);
 }
 
-<<<<<<< HEAD
-.bg_chief {
-  border-radius: 50%;
-  transition: all 1.5s linear;
-}
-
-.bg_chief:hover {
-  background-color: #fae1e1;
-}
-
-.txt_blink {
+.txt_guide {
   -webkit-animation: blink 3s 3s infinite linear;
           animation: blink 3s 3s infinite linear;
 }
@@ -143,24 +133,6 @@
   1000% {
     visibility: visible;
   }
-}
-@keyframes blink {
-  0% {
-    visibility: hidden;
-  }
-  50% {
-    visibility: hidden;
-  }
-  1000% {
-    visibility: visible;
-  }
-}
-
-=======
->>>>>>> origin
-.txt_guide {
-  -webkit-animation: blink 3s 3s infinite linear;
-          animation: blink 3s 3s infinite linear;
 }
 @keyframes blink {
   0% {
