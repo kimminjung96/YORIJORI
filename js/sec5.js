@@ -1,15 +1,15 @@
 /* sub_title ------------------------------------------------------*/
-let mainText = document.querySelector(".sub_title");
+let sub_text = document.querySelector(".sub_title");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY; //스크롤 y좌표 가져옴
-  // console.log(value);
+  console.log(value);
 
   if (value < 2300) {
     //js에서 css변경
-    mainText.style.animation = "disappear 1s ease-out forwards"; /* forwards:키프레임이 100%도달하였을때 마지막 키프레임을 유지 */
+    sub_text.style.animation = "disappear 1s ease-out forwards"; /* forwards:키프레임이 100%도달하였을때 마지막 키프레임을 유지 */
   } else {
-    mainText.style.animation = "slide 1s ease-out";
+    sub_text.style.animation = "slide 1s ease-out";
   }
 });
 
@@ -35,13 +35,18 @@ let searchButton2 = document.querySelector(".btn_wc");
 let searchButton3 = document.querySelector(".btn_jp");
 
 let element = document.querySelector(".change");
+let scroll_timer = 1000;
 
 /* click event*/
+function auto_scroll() {
+  window.scrollTo({ top: 3658, behavior: "smooth" }); //scroll y : 3658
+}
 searchButton1.addEventListener("click", () => {
   let food_type = "korean";
   let txt_none = document.querySelector(".txt_guide");
   txt_none.classList.add("d-none");
   sendApiRequest(food_type);
+  setTimeout(auto_scroll, scroll_timer);
 });
 
 searchButton2.addEventListener("click", () => {
@@ -56,6 +61,7 @@ searchButton2.addEventListener("click", () => {
 
   txt_none.classList.add("d-none");
   sendApiRequest(food_type);
+  setTimeout(auto_scroll, scroll_timer);
 });
 
 searchButton3.addEventListener("click", () => {
@@ -63,6 +69,7 @@ searchButton3.addEventListener("click", () => {
   let txt_none = document.querySelector(".txt_guide");
   txt_none.classList.add("d-none");
   sendApiRequest(food_type);
+  setTimeout(auto_scroll, scroll_timer);
 });
 
 /* API promise fetch */
