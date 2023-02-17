@@ -3,7 +3,7 @@ let sub_text = document.querySelector(".sub_title");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY; //스크롤 y좌표 가져옴
-  // console.log(value);
+  console.log(value);
 
   if (value < 2300) {
     //js에서 css변경
@@ -35,16 +35,18 @@ let searchButton2 = document.querySelector(".btn_wc");
 let searchButton3 = document.querySelector(".btn_jp");
 
 let element = document.querySelector(".change");
-let scroll_timer = 1000;
+let scroll_timer = 2000;
 
 /* click event*/
 function auto_scroll() {
-  window.scrollTo({ top: 3849, behavior: "smooth" }); //scroll y : 3849
+  window.scrollTo({ top: 3089, behavior: "smooth" }); //scroll y : 3089
 }
 searchButton1.addEventListener("click", () => {
   let food_type = "korean";
   let txt_none = document.querySelector(".txt_guide");
+  let box_none = document.querySelector(".random_box");
   txt_none.classList.add("d-none");
+  box_none.classList.add("d-none");
   sendApiRequest(food_type);
   setTimeout(auto_scroll, scroll_timer);
 });
@@ -52,6 +54,7 @@ searchButton1.addEventListener("click", () => {
 searchButton2.addEventListener("click", () => {
   let food_type;
   let txt_none = document.querySelector(".txt_guide");
+  let box_none = document.querySelector(".random_box");
   let n = Math.floor(Math.random() * 2); /* 0~1 */
 
   //chinese or western random
@@ -60,6 +63,7 @@ searchButton2.addEventListener("click", () => {
   } else food_type = "western";
 
   txt_none.classList.add("d-none");
+  box_none.classList.add("d-none");
   sendApiRequest(food_type);
   setTimeout(auto_scroll, scroll_timer);
 });
@@ -67,7 +71,9 @@ searchButton2.addEventListener("click", () => {
 searchButton3.addEventListener("click", () => {
   let food_type = "japanese";
   let txt_none = document.querySelector(".txt_guide");
+  let box_none = document.querySelector(".random_box");
   txt_none.classList.add("d-none");
+  box_none.classList.add("d-none");
   sendApiRequest(food_type);
   setTimeout(auto_scroll, scroll_timer);
 });
