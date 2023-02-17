@@ -5,7 +5,7 @@ window.addEventListener("scroll", function () {
   let value = window.scrollY; //스크롤 y좌표 가져옴
   console.log(value);
 
-  if (value < 2300) {
+  if (value < 2648) {
     //js에서 css변경
     sub_text.style.animation = "disappear 1s ease-out forwards"; /* forwards:키프레임이 100%도달하였을때 마지막 키프레임을 유지 */
   } else {

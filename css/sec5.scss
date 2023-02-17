@@ -19,7 +19,7 @@
 }
 .sub_title {
   position: absolute;
-  top: 105px;
+  top: 95px;
   left: 50%;
   transform: translateX(-50%);
   animation: slide 2s ease-in-out;
@@ -27,11 +27,11 @@
 
 @keyframes slide {
   from {
-    top: 300px;
+    top: 150px;
     opacity: 0;
   }
   to {
-    top: 105px;
+    top: 95px;
     opacity: 1;
   }
 }
@@ -42,7 +42,7 @@
     opacity: 1;
   }
   to {
-    top: 300px;
+    top: 150px;
     opacity: 0;
   }
 }
@@ -115,12 +115,11 @@
   }
 }
 // text blink
-.card-body{
-  & table{
-    & tr{
-      background-color: #FFFDFA;
+.card-body {
+  & table {
+    & tr {
+      background-color: #fffdfa;
     }
-   
   }
 }
 
@@ -130,16 +129,16 @@
 
 @media (max-width: 576px) {
   .sec5_container {
-    h1{
+    h1 {
       font-size: 24px;
     }
-    p{
+    p {
       font-size: 14px;
     }
-    .sub_title{
+    .sub_title {
       font-size: 16px;
-    } 
-    button{
+    }
+    button {
       font-size: 18px;
     }
   }
@@ -148,4 +147,3 @@
     font-size: 18px;
   }
 }
-
