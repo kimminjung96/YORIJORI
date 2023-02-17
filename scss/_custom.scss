@@ -203,6 +203,9 @@ input[type="submit"] {
   .header .m992 {
     justify-content: space-between !important;
   }
+  .header .nav-link::before{
+    bottom: 13px !important;
+  }
 }
 
 .nav-side {
