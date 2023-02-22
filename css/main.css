@@ -11937,6 +11937,10 @@ input[type=submit] {
   justify-content: center;
 }
 
+.card-body .text-center p span {
+  color: #ff0000;
+}
+
 /* $info: $cyan !default;
   $warning: $yellow !default;
   $danger: $red !default;
