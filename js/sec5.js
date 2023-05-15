@@ -3,7 +3,6 @@ let sub_text = document.querySelector(".sub_title");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY; //스크롤 y좌표 가져옴
-  console.log(value);
 
   if (value < 2648) {
     //js에서 css변경
@@ -86,11 +85,9 @@ async function sendApiRequest(f_tp) {
   let random_num = [];
   let i = 0;
 
-  console.log(type);
   //url
   let response = await fetch(`https://api.edamam.com/search?app_id=${APP_ID}&app_key=${API_KEY}&q=${type}`);
   let data = await response.json();
-  console.log(data);
 
   //random
   while (i < 3) {
@@ -122,9 +119,6 @@ function useApiData(data, rn, tp) {
   let num1 = rn[0];
   let num2 = rn[1];
   let num3 = rn[2];
-
-  /*   console.log("타입 :", tp);
-  console.log("타입번호:", num1); */
 
   /* 제목 한글화 */
   //card title-1
